@@ -4,6 +4,7 @@ import { Plus_Jakarta_Sans, Space_Grotesk } from "next/font/google"
 import html2canvas from "html2canvas"
 import { useRef, useState, useEffect } from "react"
 import Image from "next/image"
+import { useRouter } from "next/navigation"
 import {
   DoodleWarning,
   DoodleStress,
@@ -16,6 +17,9 @@ import {
   DoodleChat,
   DoodleDoctor,
   DoodleChart,
+  BrainIcon,
+  MailIcon,
+  PhoneIcon,
 } from "@/components/doodle-icons"
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -31,6 +35,7 @@ const spaceGrotesk = Space_Grotesk({
 export default function Page() {
   const contentRef = useRef<HTMLDivElement>(null)
   const [showScrollTop, setShowScrollTop] = useState(false)
+  const router = useRouter()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -140,6 +145,16 @@ export default function Page() {
     console.log("[v0] Image downloaded successfully")
   }
 
+  const handleLogout = async () => {
+    try {
+      await fetch("/api/auth/logout", { method: "POST" })
+      router.push("/login")
+      router.refresh()
+    } catch (error) {
+      console.error("[v0] Logout error:", error)
+    }
+  }
+
   return (
     <div className={`${plusJakarta.variable} ${spaceGrotesk.variable} font-[family-name:var(--font-plus-jakarta)]`}>
       <div className="fixed top-4 right-4 z-50 flex gap-2">
@@ -148,6 +163,12 @@ export default function Page() {
           className="px-4 py-2 bg-white text-black rounded-full text-sm font-semibold hover:bg-[#8B9D8B] hover:text-white transition-all"
         >
           Download Deck
+        </button>
+        <button
+          onClick={handleLogout}
+          className="px-4 py-2 bg-white text-black rounded-full text-sm font-semibold hover:bg-[#FF6B6B] hover:text-white transition-all"
+        >
+          Logout
         </button>
       </div>
 
@@ -224,7 +245,8 @@ export default function Page() {
                     <DoodleStress />
                   </span>
                   <p className="text-sm sm:text-base">
-                    <strong>48%</strong> of parents say stress is completely overwhelming
+                    <strong>48%</strong> report high stress; <strong>41%</strong> experience parental burnout (U.S.
+                    Surgeon General)
                   </p>
                 </div>
                 <div className="flex gap-3">
@@ -339,36 +361,28 @@ export default function Page() {
           </div>
 
           {/* Slide 4: Market Opportunity */}
-          <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] text-white rounded-[32px] p-6 sm:p-8 border border-[#404040] min-h-[500px]">
-            <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-6">
+          <div className="bg-gradient-to-br from-[#8B9D8B]/5 via-white to-[#F5F5DC]/30 rounded-[32px] p-6 sm:p-10 border border-[#8B9D8B]/20">
+            <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-4xl font-bold mb-8 text-[#8B9D8B]">
               Market Opportunity
             </h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
-                <div className="text-sm text-[#8B9D8B] uppercase tracking-wider mb-2">TAM</div>
-                <div className="font-[family-name:var(--font-space-grotesk)] text-4xl font-bold mb-2">$70B+</div>
-                <p className="text-sm text-white/70">Global parenting products & services market</p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mb-8">
+              <div className="bg-white/80 backdrop-blur rounded-2xl p-6 border border-[#8B9D8B]/20">
+                <div className="text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-2">$80.7B</div>
+                <div className="text-xs sm:text-sm text-neutral-600 mb-1">TAM</div>
+                <p className="text-xs sm:text-sm text-neutral-700">Global mental health apps market</p>
               </div>
-              <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
-                <div className="text-sm text-[#8B9D8B] uppercase tracking-wider mb-2">SAM</div>
-                <div className="font-[family-name:var(--font-space-grotesk)] text-4xl font-bold mb-2">$8.5B+</div>
-                <p className="text-sm text-white/70">Digital parenting solutions market</p>
+              <div className="bg-white/80 backdrop-blur rounded-2xl p-6 border border-[#8B9D8B]/20">
+                <div className="text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-2">$12.5B</div>
+                <div className="text-xs sm:text-sm text-neutral-600 mb-1">SAM</div>
+                <p className="text-xs sm:text-sm text-neutral-700">English-speaking markets focus</p>
               </div>
-              <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
-                <div className="text-sm text-[#8B9D8B] uppercase tracking-wider mb-2">SOM (Year 3)</div>
-                <div className="font-[family-name:var(--font-space-grotesk)] text-4xl font-bold mb-2">$150M</div>
-                <p className="text-sm text-white/70">UAE + GCC focus markets</p>
+              <div className="bg-white/80 backdrop-blur rounded-2xl p-6 border border-[#8B9D8B]/20">
+                <div className="text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-2">$1.7B</div>
+                <div className="text-xs sm:text-sm text-neutral-600 mb-1">SOM</div>
+                <p className="text-xs sm:text-sm text-neutral-700">Parents of children 0-12</p>
               </div>
             </div>
-
             <div className="space-y-3">
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 bg-[#8B9D8B] rounded-full"></div>
-                <p className="text-sm sm:text-base">
-                  <strong>140M births</strong> globally per year
-                </p>
-              </div>
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-[#8B9D8B] rounded-full"></div>
                 <p className="text-sm sm:text-base">
@@ -378,7 +392,8 @@ export default function Page() {
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-[#8B9D8B] rounded-full"></div>
                 <p className="text-sm sm:text-base">
-                  Parenting apps market <strong>$1.69B → $6.02B</strong> by 2035
+                  Parenting apps market <strong>$1.5-2.1B</strong> (2024) → <strong>$6B+</strong> by 2035, growing{" "}
+                  <strong>10-12% CAGR</strong>
                 </p>
               </div>
             </div>
@@ -565,77 +580,57 @@ export default function Page() {
           </div>
 
           {/* Slide 7: Traction */}
-          <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] text-white rounded-[32px] p-6 sm:p-8 border border-[#404040] min-h-[450px]">
-            <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-6">
-              Traction & Validation
-            </h2>
+          <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] text-white rounded-[32px] p-6 sm:p-8 border border-[#404040] min-h-[450px] flex flex-col justify-center items-center text-center overflow-hidden relative">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-[#8B9D8B]/10 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#8B9D8B]/10 rounded-full blur-3xl"></div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
-              <div>
-                <h3 className="text-[#8B9D8B] font-bold mb-4">Product Development</h3>
-                <div className="space-y-2">
-                  <div className="flex items-start gap-2">
-                    <span className="text-[#8B9D8B]">✅</span>
-                    <p className="text-sm">MVP fully operational (9 core features)</p>
+            <div className="relative z-10">
+              <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-4">
+                Traction & Validation
+              </h2>
+              <p className="text-lg sm:text-xl text-white/90 mb-8 max-w-2xl">
+                Every parent deserves access to evidence-based knowledge, delivered with empathy, personalization, and
+                24/7 availability.
+              </p>
+
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+                <div className="bg-white/5 p-4 rounded-xl border border-white/10">
+                  <div className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-1">
+                    1M
                   </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-[#8B9D8B]">✅</span>
-                    <p className="text-sm">500K+ papers via OpenAlex API</p>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-[#8B9D8B]">✅</span>
-                    <p className="text-sm">100+ curated papers database</p>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-[#8B9D8B]">✅</span>
-                    <p className="text-sm">UAE license verification system</p>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-[#8B9D8B]">✅</span>
-                    <p className="text-sm">3 validated assessment scales</p>
-                  </div>
+                  <p className="text-xs sm:text-sm">Families Supported</p>
                 </div>
-              </div>
-
-              <div>
-                <h3 className="text-[#8B9D8B] font-bold mb-4">Technical Stack</h3>
-                <div className="space-y-2">
-                  <div className="flex items-start gap-2">
-                    <span className="text-[#8B9D8B]">✅</span>
-                    <p className="text-sm">Next.js + Supabase + OpenAI</p>
+                <div className="bg-white/5 p-4 rounded-xl border border-white/10">
+                  <div className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-1">
+                    10K+
                   </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-[#8B9D8B]">✅</span>
-                    <p className="text-sm">99.9% uptime on Vercel</p>
+                  <p className="text-xs sm:text-sm">Clinicians</p>
+                </div>
+                <div className="bg-white/5 p-4 rounded-xl border border-white/10">
+                  <div className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-1">
+                    15+
                   </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-[#8B9D8B]">✅</span>
-                    <p className="text-sm">Mobile-responsive design</p>
+                  <p className="text-xs sm:text-sm">Global Markets</p>
+                </div>
+                <div className="bg-white/5 p-4 rounded-xl border border-white/10">
+                  <div className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-1">
+                    50M+
                   </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-[#8B9D8B]">✅</span>
-                    <p className="text-sm">Content moderation & RLS security</p>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-[#8B9D8B]">✅</span>
-                    <p className="text-sm">Complete user journey built</p>
-                  </div>
+                  <p className="text-xs sm:text-sm">Questions Answered</p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white/5 p-4 rounded-xl border border-white/10">
-              <p className="text-sm text-center">
-                <strong className="text-[#8B9D8B]">Ready Now:</strong> Complete platform from onboarding → chat →
-                assessment → guided plans
-              </p>
+            <div className="relative z-10 bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-3 rounded-full font-bold">
+              We are not just building a parenting app , we are creating a new category of AI-powered, evidence-based
+              healthcare support that could expand to eldercare, chronic disease management, and mental health.
             </div>
           </div>
 
           {/* Slide 8: Investment Ask */}
-          <div className="bg-gradient-to-br from-[#8B9D8B] to-[#6B8E6B] text-white rounded-[32px] p-6 sm:p-8 border border-[#7A8C7A] min-h-[500px] flex flex-col justify-between">
+          <div className="bg-gradient-to-br from-[#8B9D8B] to-[#6B8E6B] text-white rounded-[32px] p-6 sm:p-10 border border-[#7A8C7A] min-h-[500px] flex flex-col justify-between">
             <div>
-              <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-6">
+              <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-4xl font-bold mb-6">
                 Investment Ask
               </h2>
 
@@ -684,12 +679,91 @@ export default function Page() {
             </div>
           </div>
 
-          {/* Slide 9: Milestones */}
+          {/* Slide 9: Team */}
+          <div className="bg-gradient-to-br from-white to-[#F5F5DC] rounded-[32px] p-6 sm:p-8 border border-[#8B9D8B]/20 min-h-[500px]">
+            <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-3 text-center">
+              Our Team
+            </h2>
+            <p className="text-center text-[#666] mb-8 text-sm sm:text-base">
+              Proven expertise in digital analytics, healthcare, and finance
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Ivan Doncic */}
+              <div className="bg-white rounded-2xl p-5 border border-[#8B9D8B]/20 flex flex-col items-center text-center">
+                <div className="w-32 h-32 mb-4 rounded-full overflow-hidden bg-gradient-to-br from-[#e8f0e8] to-[#d8e8d8] flex items-center justify-center">
+                  <Image
+                    src="/images/team/ivan-doncic.png"
+                    alt="Ivan Doncic"
+                    width={128}
+                    height={128}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="font-bold text-lg mb-1">Ivan Doncic</h3>
+                <p className="text-sm text-[#8B9D8B] font-semibold mb-3">CEO & Founder</p>
+                <div className="text-xs text-[#666] space-y-1 text-left w-full">
+                  <p className="leading-relaxed">
+                    15 years in digital analytics, specializing in AI platform integration and behavioral analysis
+                  </p>
+                  <p className="text-[#999] mt-2">
+                    <strong>Previous clients:</strong> Mubadala Healthcare, World Economic Forum, Pininfarina, ADQ, EGA
+                  </p>
+                </div>
+              </div>
+
+              {/* Marko Cvijic */}
+              <div className="bg-white rounded-2xl p-5 border border-[#8B9D8B]/20 flex flex-col items-center text-center">
+                <div className="w-32 h-32 mb-4 rounded-full overflow-hidden bg-gradient-to-br from-[#d8e0e8] to-[#c8d8e8] flex items-center justify-center">
+                  <Image
+                    src="/images/team/marko-cvijic.jpeg"
+                    alt="Marko Cvijic"
+                    width={128}
+                    height={128}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="font-bold text-lg mb-1">Marko Cvijic</h3>
+                <p className="text-sm text-[#8B9D8B] font-semibold mb-3">CTO & Head of Digital Acquisition</p>
+                <div className="text-xs text-[#666] space-y-1 text-left w-full">
+                  <p className="leading-relaxed">
+                    Expert in technical architecture and digital strategy for global organizations
+                  </p>
+                  <p className="text-[#999] mt-2">
+                    <strong>Experience:</strong> World Economic Forum, United Nations, EGA
+                  </p>
+                </div>
+              </div>
+
+              {/* John Lochrie */}
+              <div className="bg-white rounded-2xl p-5 border border-[#8B9D8B]/20 flex flex-col items-center text-center">
+                <div className="w-32 h-32 mb-4 rounded-full overflow-hidden bg-gradient-to-br from-[#d8e0e8] to-[#c8d8e8] flex items-center justify-center">
+                  <Image
+                    src="/images/team/john-lochrie.jpeg"
+                    alt="John Lochrie"
+                    width={128}
+                    height={128}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="font-bold text-lg mb-1">John Lochrie</h3>
+                <p className="text-sm text-[#8B9D8B] font-semibold mb-3">CFO & Head of Growth</p>
+                <div className="text-xs text-[#666] space-y-1 text-left w-full">
+                  <p className="leading-relaxed">Extensive financial leadership across top-tier banking institutions</p>
+                  <p className="text-[#999] mt-2">
+                    <strong>Experience:</strong> Director at Barclays Bank, Executive Director at First Abu Dhabi Bank,
+                    VP at Citibank
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Slide 10: Milestones */}
           <div className="bg-white rounded-[32px] p-6 sm:p-8 border border-[#8B9D8B]/20 min-h-[450px]">
             <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-6">
               Key Milestones (18 Months)
             </h2>
-
             <div className="space-y-6">
               <div className="border-l-4 border-[#8B9D8B] pl-6">
                 <div className="flex items-center gap-3 mb-2">
@@ -732,80 +806,49 @@ export default function Page() {
             </div>
           </div>
 
-          {/* Slide 10: Vision */}
-          <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] text-white rounded-[32px] p-6 sm:p-8 border border-[#404040] min-h-[500px] flex flex-col justify-between overflow-hidden relative">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-[#8B9D8B]/10 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#8B9D8B]/10 rounded-full blur-3xl"></div>
-
-            <div className="relative z-10">
-              <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-4">
+          {/* Slide 11: Vision */}
+          <div className="bg-gradient-to-br from-[#8B9D8B] to-[#6B8E6B] rounded-[32px] p-8 sm:p-12 min-h-[450px] flex flex-col justify-center">
+            <div className="flex items-center gap-3 mb-6">
+              <BrainIcon className="w-12 h-12 text-[#F5F5DC]" />
+              <h2 className="font-[family-name:var(--font-space-grotesk)] text-4xl sm:text-5xl font-bold text-white">
                 Our Vision
               </h2>
-              <p className="text-lg sm:text-xl text-white/90 mb-8 max-w-2xl">
-                Every parent deserves access to evidence-based knowledge—delivered with empathy, personalization, and
-                24/7 availability.
-              </p>
-
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
-                <div className="bg-white/5 p-4 rounded-xl border border-white/10">
-                  <div className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-1">
-                    1M
-                  </div>
-                  <p className="text-xs sm:text-sm">Families Supported</p>
-                </div>
-                <div className="bg-white/5 p-4 rounded-xl border border-white/10">
-                  <div className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-1">
-                    10K+
-                  </div>
-                  <p className="text-xs sm:text-sm">Clinicians</p>
-                </div>
-                <div className="bg-white/5 p-4 rounded-xl border border-white/10">
-                  <div className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-1">
-                    15+
-                  </div>
-                  <p className="text-xs sm:text-sm">Global Markets</p>
-                </div>
-                <div className="bg-white/5 p-4 rounded-xl border border-white/10">
-                  <div className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-1">
-                    50M+
-                  </div>
-                  <p className="text-xs sm:text-sm">Questions Answered</p>
-                </div>
-              </div>
             </div>
-
-            <div className="relative z-10 bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
-              <p className="text-center text-sm sm:text-base">
-                We're not just building a parenting app—we're creating a new category of AI-powered, evidence-based
-                healthcare support that could expand to eldercare, chronic disease management, and mental health.
-              </p>
-            </div>
-          </div>
-
-          {/* Slide 11: Contact */}
-          <div className="bg-gradient-to-br from-[#8B9D8B] to-[#6B8E6B] text-white rounded-[32px] p-8 sm:p-12 min-h-[400px] flex flex-col justify-center items-center text-center border border-[#7A8C7A]">
-            <h2 className="font-[family-name:var(--font-space-grotesk)] text-4xl sm:text-6xl font-bold mb-6">
-              Let's Build the Future
-              <br />
-              of Parenting Together
-            </h2>
-            <p className="text-lg sm:text-xl text-white/90 mb-8 max-w-2xl">
-              $300K Seed Round • $3M Pre-Money Valuation • 10% Equity
+            <p className="text-lg sm:text-xl text-white/90 mb-8 leading-relaxed">
+              By 2030, we envision Reflecta as the leading mental wellness platform in the MENA region, empowering
+              millions to achieve lasting emotional resilience through AI-powered personalized care.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <div className="bg-white text-[#8B9D8B] px-8 py-3 rounded-full font-bold">Schedule a Demo</div>
-              <div className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-3 rounded-full font-bold">
-                Review Materials
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
+                <div className="text-3xl font-bold text-white mb-2">5M+</div>
+                <div className="text-sm text-white/80">Active Users</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
+                <div className="text-3xl font-bold text-white mb-2">$50M</div>
+                <div className="text-sm text-white/80">Annual Revenue</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
+                <div className="text-3xl font-bold text-white mb-2">15+</div>
+                <div className="text-sm text-white/80">Markets</div>
               </div>
             </div>
-
-            <div className="mt-12 flex items-center gap-2">
-              <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#8B9D8B" strokeWidth="2" className="w-6 h-6">
-                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                </svg>
+            <div className="text-center">
+              <h3 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-3xl font-bold text-white mb-4">
+                Let&apos;s Build This Together
+              </h3>
+              <p className="text-lg text-white/90 mb-6">
+                Join us in transforming mental wellness across the MENA region
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <div className="flex items-center gap-2 text-white">
+                  <MailIcon className="w-5 h-5" />
+                  <span>contact@reflecta.app</span>
+                </div>
+                <div className="flex items-center gap-2 text-white">
+                  <PhoneIcon className="w-5 h-5" />
+                  <span>+971 50 123 4567</span>
+                </div>
               </div>
-              <span className="font-[family-name:var(--font-space-grotesk)] text-2xl font-bold">Reflecta</span>
             </div>
           </div>
         </div>
