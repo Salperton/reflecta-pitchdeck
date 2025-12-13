@@ -373,7 +373,7 @@ export default function Page() {
                   <div className="bg-white/80 p-3 rounded-lg">
                     <p className="text-sm text-red-800 mb-2 font-semibold">Response:</p>
                     <p className="text-xs text-red-700">
-                      "Try giving your child warm milk before bed. Many parents find this helpful."
+                      &quot;Gotcha, here is a 5 step approach you can take. First tell your child you understand, then calm them down&quot;
                     </p>
                   </div>
                   <div className="flex flex-wrap gap-2 text-xs">
@@ -396,12 +396,13 @@ export default function Page() {
                   <div className="bg-white/80 p-3 rounded-lg">
                     <p className="text-sm text-[#1a1a1a] mb-2 font-semibold">Response:</p>
                     <p className="text-xs text-[#333]">
-                      "Based on AAP guidelines
+                      "Based on AAP & Yale research
                       <span className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-[#8B9D8B] text-white text-[8px] ml-1">
                         1
                       </span>
-                      , warm milk before bed can be part of a calming routine. However, for children under 12 months,
-                      ensure proper dilution and consult your pediatrician about age-appropriate serving sizes."
+                      , complete ignoring can escalate distress. For ages 2-4, validate feelings first ('I see you're
+                      upset'), then redirect. If injury risk exists, ensure safety while staying calm. This approach
+                      reduces tantrum duration by 40% vs. full ignoring."
                     </p>
                   </div>
                   <div className="flex flex-wrap gap-2 text-xs">
@@ -439,30 +440,30 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-              <div className="text-center">
-                <div className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold text-[#8B9D8B]">
-                  500K+
+            <div className="bg-gradient-to-r from-[#8B9D8B]/10 to-[#8B9D8B]/5 rounded-2xl p-6 border-2 border-[#8B9D8B]/30">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                <div className="flex-shrink-0">
+                  <div className="w-16 h-16 rounded-full bg-[#8B9D8B] flex items-center justify-center">
+                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                      />
+                    </svg>
+                  </div>
                 </div>
-                <p className="text-xs sm:text-sm text-[#666]">Research Papers</p>
-              </div>
-              <div className="text-center">
-                <div className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold text-[#8B9D8B]">
-                  24/7
+                <div className="flex-1">
+                  <h3 className="font-[family-name:var(--font-space-grotesk)] text-xl sm:text-2xl font-bold mb-2 text-[#1a1a1a]">
+                    General AI hallucinates. Reflecta validates.
+                  </h3>
+                  <p className="text-sm sm:text-base text-[#666] leading-relaxed">
+                    We use a RAG engine to cross-reference every answer against{" "}
+                    <span className="font-bold text-[#8B9D8B]">10,000+ peer-reviewed pediatric journals</span>. No
+                    guesswork. No generic advice. Just evidence-based guidance you can trust.
+                  </p>
                 </div>
-                <p className="text-xs sm:text-sm text-[#666]">Availability</p>
-              </div>
-              <div className="text-center">
-                <div className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold text-[#8B9D8B]">
-                  &lt;2s
-                </div>
-                <p className="text-xs sm:text-sm text-[#666]">Response Time</p>
-              </div>
-              <div className="text-center">
-                <div className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold text-[#8B9D8B]">
-                  4-Tier
-                </div>
-                <p className="text-xs sm:text-sm text-[#666]">Quality System</p>
               </div>
             </div>
           </div>
@@ -675,6 +676,111 @@ export default function Page() {
                 Population Prospects (2024), Mordor Intelligence (2024), UnivDatos Market Insights (2022), MediTech
                 Insights, McKinsey & Company, IMARC Group (2024), World Economic Forum (2024)
               </p>
+            </div>
+          </div>
+
+          {/* Slide 4: Why Now? */}
+          <div className="bg-white/90 backdrop-blur rounded-[32px] p-8 sm:p-12 min-h-[500px] border border-[#8B9D8B]/20 overflow-hidden">
+            <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-4xl font-bold mb-4 text-[#8B9D8B]">
+              Why Now?
+            </h2>
+            <p className="text-lg sm:text-xl text-neutral-600 mb-8 font-medium">
+              The Intersection of Desperation and Adoption.
+            </p>
+
+            <div className="space-y-8">
+              {/* Trend 1: Mental Health Explosion */}
+              <div className="bg-gradient-to-br from-[#8B9D8B]/10 to-white/50 backdrop-blur rounded-2xl p-6 border border-[#8B9D8B]/30">
+                <div className="space-y-4">
+                  <div className="flex justify-center">
+                    <div className="w-16 h-16 bg-[#8B9D8B] rounded-full flex items-center justify-center">
+                      <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div className="space-y-3">
+                    <h3 className="font-[family-name:var(--font-space-grotesk)] text-xl sm:text-2xl font-bold text-center text-[#8B9D8B]">
+                      Trend 1: Mental Health Explosion
+                    </h3>
+                    <p className="text-base sm:text-lg leading-relaxed text-center">
+                      The global <strong>Mental Health Apps market</strong> was valued at{" "}
+                      <span className="text-[#8B9D8B] font-bold text-xl">$6.52 Billion in 2024</span> and is projected
+                      to hit <span className="text-[#8B9D8B] font-bold text-xl">$23.8 Billion by 2032</span> (
+                      <strong>18% CAGR</strong>).
+                    </p>
+                    <div className="bg-white/80 rounded-lg p-4 border border-[#8B9D8B]/20">
+                      <p className="text-sm sm:text-base italic text-neutral-700 text-center">
+                        "<strong>Stress Management</strong>" is identified as a primary growth driver, validating the
+                        need for daily parental support tools.
+                      </p>
+                    </div>
+                    <p className="text-xs text-neutral-500 flex items-center justify-center gap-2">
+                      <span>Source: Fortune Business Insights, 2025 Report</span>
+                      <a
+                        href="https://www.fortunebusinessinsights.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center w-5 h-5 bg-[#8B9D8B] text-white rounded-full text-xs font-bold hover:bg-[#6B8E6B] transition-colors"
+                      >
+                        15
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Trend 3: Smart Capital Shift */}
+              <div className="bg-gradient-to-br from-[#8B9D8B]/10 to-white/50 backdrop-blur rounded-2xl p-6 border border-[#8B9D8B]/30">
+                <div className="space-y-4">
+                  <div className="flex justify-center">
+                    <div className="w-16 h-16 bg-[#8B9D8B] rounded-full flex items-center justify-center">
+                      <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div className="space-y-3">
+                    <h3 className="font-[family-name:var(--font-space-grotesk)] text-xl sm:text-2xl font-bold text-center text-[#8B9D8B]">
+                      Trend 3: Smart Capital Shift
+                    </h3>
+                    <p className="text-base sm:text-lg leading-relaxed text-center">
+                      <span className="text-[#8B9D8B] font-bold text-xl">83%</span> of <strong>Family Offices</strong>{" "}
+                      rank AI as a top investment priority for the next 5 years, actively shifting capital toward
+                      specialized AI applications that offer distinct competitive advantages.
+                    </p>
+                    <div className="bg-white/80 rounded-lg p-4 border border-[#8B9D8B]/20">
+                      <p className="text-sm sm:text-base italic text-neutral-700 text-center">
+                        High-net-worth investors are prioritizing AI solutions with clear moats and specialized
+                        expertise.
+                      </p>
+                    </div>
+                    <p className="text-xs text-neutral-500 flex items-center justify-center gap-2">
+                      <span>Source: BNY Mellon, 2025 Investment Insights</span>
+                      <a
+                        href="https://www.bnymellon.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center w-5 h-5 bg-[#8B9D8B] text-white rounded-full text-xs font-bold hover:bg-[#6B8E6B] transition-colors"
+                      >
+                        16
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
