@@ -166,7 +166,7 @@ export default function Page() {
         >
           Download Deck
         </button>
-        {/* 
+        {/*
         <button
           onClick={handleLogout}
           className="px-4 py-2 bg-white text-black rounded-full text-sm font-semibold hover:bg-[#FF6B6B] hover:text-white transition-all"
@@ -357,8 +357,63 @@ export default function Page() {
               The Solution: Reflecta
             </h2>
             <p className="text-lg sm:text-xl text-[#666] mb-8">
-              The First AI Parenting Assistant Backed by Real Research
+              The Evidence-Based Operating System for Modern Parenting
             </p>
+
+            <div className="mb-8 grid md:grid-cols-2 gap-4">
+              {/* ChatGPT Side */}
+              <div className="bg-red-50 border-2 border-red-200 rounded-2xl p-6">
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="w-8 h-8 rounded-full bg-red-500 flex items-center justify-center text-white font-bold text-sm">
+                    AI
+                  </div>
+                  <h3 className="font-bold text-red-900">Generic AI (e.g., ChatGPT)</h3>
+                </div>
+                <div className="space-y-3">
+                  <div className="bg-white/80 p-3 rounded-lg">
+                    <p className="text-sm text-red-800 mb-2 font-semibold">Response:</p>
+                    <p className="text-xs text-red-700">
+                      "Try giving your child warm milk before bed. Many parents find this helpful."
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-2 text-xs">
+                    <span className="bg-red-100 text-red-700 px-2 py-1 rounded-full">❌ No citations</span>
+                    <span className="bg-red-100 text-red-700 px-2 py-1 rounded-full">❌ Generic advice</span>
+                    <span className="bg-red-100 text-red-700 px-2 py-1 rounded-full">⚠️ Potentially unsafe</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Reflecta Side */}
+              <div className="bg-[#8B9D8B]/10 border-2 border-[#8B9D8B] rounded-2xl p-6">
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="w-8 h-8 rounded-full bg-[#8B9D8B] flex items-center justify-center">
+                    <Image src="/images/reflecta-logo.png" alt="R" width={20} height={20} className="w-5 h-5" />
+                  </div>
+                  <h3 className="font-bold text-[#1a1a1a]">Reflecta</h3>
+                </div>
+                <div className="space-y-3">
+                  <div className="bg-white/80 p-3 rounded-lg">
+                    <p className="text-sm text-[#1a1a1a] mb-2 font-semibold">Response:</p>
+                    <p className="text-xs text-[#333]">
+                      "Based on AAP guidelines
+                      <span className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-[#8B9D8B] text-white text-[8px] ml-1">
+                        1
+                      </span>
+                      , warm milk before bed can be part of a calming routine. However, for children under 12 months,
+                      ensure proper dilution and consult your pediatrician about age-appropriate serving sizes."
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-2 text-xs">
+                    <span className="bg-[#8B9D8B]/20 text-[#1a1a1a] px-2 py-1 rounded-full">✅ Cited sources</span>
+                    <span className="bg-[#8B9D8B]/20 text-[#1a1a1a] px-2 py-1 rounded-full">
+                      ✅ Age-specific guidance
+                    </span>
+                    <span className="bg-[#8B9D8B]/20 text-[#1a1a1a] px-2 py-1 rounded-full">✅ Medically safe</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
               <div className="bg-[#8B9D8B]/10 p-4 rounded-2xl border border-[#8B9D8B]/20">
