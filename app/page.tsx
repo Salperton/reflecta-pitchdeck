@@ -4,7 +4,7 @@ import { Plus_Jakarta_Sans, Space_Grotesk } from "next/font/google"
 import html2canvas from "html2canvas"
 import { useRef, useState, useEffect } from "react"
 import Image from "next/image"
-import { useRouter } from "next/navigation"
+// import { useRouter } from 'next/navigation'
 import {
   DoodleWarning,
   DoodleStress,
@@ -35,7 +35,7 @@ const spaceGrotesk = Space_Grotesk({
 export default function Page() {
   const contentRef = useRef<HTMLDivElement>(null)
   const [showScrollTop, setShowScrollTop] = useState(false)
-  const router = useRouter()
+  // const router = useRouter()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -145,6 +145,7 @@ export default function Page() {
     console.log("[v0] Image downloaded successfully")
   }
 
+  /*
   const handleLogout = async () => {
     try {
       await fetch("/api/auth/logout", { method: "POST" })
@@ -154,6 +155,7 @@ export default function Page() {
       console.error("[v0] Logout error:", error)
     }
   }
+  */
 
   return (
     <div className={`${plusJakarta.variable} ${spaceGrotesk.variable} font-[family-name:var(--font-plus-jakarta)]`}>
@@ -164,12 +166,14 @@ export default function Page() {
         >
           Download Deck
         </button>
+        {/* 
         <button
           onClick={handleLogout}
           className="px-4 py-2 bg-white text-black rounded-full text-sm font-semibold hover:bg-[#FF6B6B] hover:text-white transition-all"
         >
           Logout
         </button>
+        */}
       </div>
 
       {showScrollTop && (
@@ -226,18 +230,30 @@ export default function Page() {
           </div>
 
           {/* Slide 2: The Problem */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-            <div className="bg-[#FF6B6B]/10 rounded-[32px] p-6 sm:p-8 border border-[#FF6B6B]/20 min-h-[400px] flex flex-col">
-              <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-3xl font-bold mb-6 text-[#FF6B6B]">
-                The Current Reality
-              </h2>
-              <div className="space-y-4 flex-1">
+          <div className="bg-white/90 backdrop-blur rounded-[32px] p-8 sm:p-12 min-h-[500px] border border-[#8B9D8B]/20 overflow-hidden">
+            <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-4xl font-bold mb-6 text-[#8B9D8B]">
+              The Problem
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
+              <div className="space-y-6">
+                <h3 className="font-[family-name:var(--font-space-grotesk)] text-lg sm:text-2xl font-semibold text-[#1a1a1a]">
+                  Parents Are Overwhelmed
+                </h3>
                 <div className="flex gap-3">
                   <span className="text-[#FF6B6B] flex-shrink-0">
-                    <DoodleWarning />
+                    <DoodleStress />
                   </span>
                   <p className="text-sm sm:text-base">
-                    Fragmented, conflicting advice across blogs, forums, social media
+                    <strong>48%</strong> of parents say stress is completely overwhelming
+                    <a
+                      href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7970748/pdf/42761_2020_Article_28.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-[#8B9D8B] text-white text-[10px] ml-1 hover:bg-[#6B8E6B] transition-colors align-super"
+                      title="U.S. Surgeon General, 2024"
+                    >
+                      1
+                    </a>
                   </p>
                 </div>
                 <div className="flex gap-3">
@@ -245,8 +261,16 @@ export default function Page() {
                     <DoodleStress />
                   </span>
                   <p className="text-sm sm:text-base">
-                    <strong>48%</strong> report high stress; <strong>41%</strong> experience parental burnout (U.S.
-                    Surgeon General)
+                    <strong>41%</strong> so stressed they cannot function most days{" "}
+                    <a
+                      href="https://www.sciencedirect.com/science/article/abs/pii/S0190740920300682"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-[#8B9D8B] rounded-full hover:bg-[#6B8E6B] transition-colors"
+                      title="View reference"
+                    >
+                      2
+                    </a>
                   </p>
                 </div>
                 <div className="flex gap-3">
@@ -254,7 +278,33 @@ export default function Page() {
                     <DoodleSearch />
                   </span>
                   <p className="text-sm sm:text-base">
-                    Average parent consults <strong>7+ sources</strong> for one question
+                    <strong>58%</strong> say there's so much information, it's hard to know who to trust{" "}
+                    <a
+                      href="https://www.jmir.org/2020/8/e19985/pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-[#8B9D8B] rounded-full hover:bg-[#6B8E6B] transition-colors"
+                      title="View reference"
+                    >
+                      3
+                    </a>
+                  </p>
+                </div>
+                <div className="flex gap-3">
+                  <span className="text-[#FF6B6B] flex-shrink-0">
+                    <DoodleSearch />
+                  </span>
+                  <p className="text-sm sm:text-base">
+                    <strong>40%</strong> find it difficult to distinguish good vs. bad advice on social media{" "}
+                    <a
+                      href="https://pediatrics.jmir.org/2020/2/e19669/pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-[#8B9D8B] rounded-full hover:bg-[#6B8E6B] transition-colors"
+                      title="View reference"
+                    >
+                      4
+                    </a>
                   </p>
                 </div>
                 <div className="flex gap-3">
@@ -264,36 +314,38 @@ export default function Page() {
                   <p className="text-sm sm:text-base">Research locked behind paywalls & academic jargon</p>
                 </div>
               </div>
-            </div>
 
-            <div className="bg-[#8B9D8B]/10 rounded-[32px] p-6 sm:p-8 border border-[#8B9D8B]/30 min-h-[400px] flex flex-col">
-              <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-3xl font-bold mb-6 text-[#8B9D8B]">
-                What Parents Need
-              </h2>
-              <div className="space-y-4 flex-1">
+              <div className="space-y-6">
+                <h3 className="font-[family-name:var(--font-space-grotesk)] text-lg sm:text-2xl font-semibold text-[#1a1a1a]">
+                  Current Resources Fall Short
+                </h3>
                 <div className="flex gap-3">
                   <span className="text-[#8B9D8B] flex-shrink-0">
-                    <DoodleCheckmark />
+                    <DoodleWarning />
                   </span>
-                  <p className="text-sm sm:text-base">Trustworthy, research-backed guidance</p>
+                  <p className="text-sm sm:text-base">
+                    Fragmented, conflicting advice across blogs, forums, social media
+                  </p>
                 </div>
                 <div className="flex gap-3">
                   <span className="text-[#8B9D8B] flex-shrink-0">
                     <DoodleLightning />
                   </span>
-                  <p className="text-sm sm:text-base">Instant access, 24/7 availability</p>
+                  <p className="text-sm sm:text-base">Lack of instant access, 24/7 availability for urgent needs</p>
                 </div>
                 <div className="flex gap-3">
                   <span className="text-[#8B9D8B] flex-shrink-0">
                     <DoodleBaby />
                   </span>
-                  <p className="text-sm sm:text-base">Personalized to their child's age and needs</p>
+                  <p className="text-sm sm:text-base">
+                    Generic advice, not personalized to specific child age or developmental stage
+                  </p>
                 </div>
                 <div className="flex gap-3">
                   <span className="text-[#8B9D8B] flex-shrink-0">
                     <DoodleHandshake />
                   </span>
-                  <p className="text-sm sm:text-base">Connection to professionals when needed</p>
+                  <p className="text-sm sm:text-base">Difficulty finding and connecting with verified professionals</p>
                 </div>
               </div>
             </div>
@@ -361,41 +413,213 @@ export default function Page() {
           </div>
 
           {/* Slide 4: Market Opportunity */}
-          <div className="bg-gradient-to-br from-[#8B9D8B]/5 via-white to-[#F5F5DC]/30 rounded-[32px] p-6 sm:p-10 border border-[#8B9D8B]/20">
+          <div className="bg-white/90 backdrop-blur rounded-[32px] p-8 sm:p-12 min-h-[500px] border border-[#8B9D8B]/20 overflow-hidden">
             <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-4xl font-bold mb-8 text-[#8B9D8B]">
               Market Opportunity
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8">
               <div className="bg-white/80 backdrop-blur rounded-2xl p-6 border border-[#8B9D8B]/20">
-                <div className="text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-2">$80.7B</div>
-                <div className="text-xs sm:text-sm text-neutral-600 mb-1">TAM</div>
-                <p className="text-xs sm:text-sm text-neutral-700">Global mental health apps market</p>
+                <div className="flex items-start gap-2">
+                  <div className="text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-2">$21.8B</div>
+                  <a
+                    href="https://www.imarcgroup.com/middle-east-digital-health-market"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 inline-flex items-center justify-center w-5 h-5 bg-[#8B9D8B] text-white rounded-full text-xs font-bold hover:bg-[#6B8E6B] transition-colors"
+                  >
+                    13
+                  </a>
+                </div>
+                <div className="text-xs sm:text-sm text-neutral-600 mb-1">TAM (2024)</div>
+                <p className="text-xs sm:text-sm text-neutral-700">Middle East Digital Health Market → $40.5B (2033)</p>
               </div>
               <div className="bg-white/80 backdrop-blur rounded-2xl p-6 border border-[#8B9D8B]/20">
-                <div className="text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-2">$12.5B</div>
+                <div className="flex items-start gap-2">
+                  <div className="text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-2">$1.69B</div>
+                  <a
+                    href="https://www.rootsanalysis.com/reports/parenting-apps-market.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 inline-flex items-center justify-center w-5 h-5 bg-[#8B9D8B] text-white rounded-full text-xs font-bold hover:bg-[#6B8E6B] transition-colors"
+                  >
+                    14
+                  </a>
+                </div>
+                <div className="text-xs sm:text-sm text-neutral-600 mb-1">Global Market</div>
+                <p className="text-xs sm:text-sm text-neutral-700">Global parenting apps market</p>
+              </div>
+              <div className="bg-white/80 backdrop-blur rounded-2xl p-6 border border-[#8B9D8B]/20">
+                <div className="text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-2">$100M</div>
                 <div className="text-xs sm:text-sm text-neutral-600 mb-1">SAM</div>
-                <p className="text-xs sm:text-sm text-neutral-700">English-speaking markets focus</p>
+                <p className="text-xs sm:text-sm text-neutral-700">MENA Parenting Apps market</p>
               </div>
               <div className="bg-white/80 backdrop-blur rounded-2xl p-6 border border-[#8B9D8B]/20">
-                <div className="text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-2">$1.7B</div>
+                <div className="text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-2">$50M</div>
                 <div className="text-xs sm:text-sm text-neutral-600 mb-1">SOM</div>
-                <p className="text-xs sm:text-sm text-neutral-700">Parents of children 0-12</p>
+                <p className="text-xs sm:text-sm text-neutral-700">GCC-Focused serviceable market</p>
               </div>
             </div>
-            <div className="space-y-3">
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 bg-[#8B9D8B] rounded-full"></div>
-                <p className="text-sm sm:text-base">
-                  Mental health apps growing <strong>14.6% CAGR</strong> to $17.52B by 2030
-                </p>
+
+            <div className="mt-8 pt-6 border-t border-[#8B9D8B]/20">
+              <h3 className="font-[family-name:var(--font-space-grotesk)] text-xl sm:text-2xl font-semibold mb-4 text-[#8B9D8B]">
+                Market Growth Analysis
+              </h3>
+              <div className="space-y-3">
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-[#8B9D8B] rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-sm sm:text-base">
+                    The global mental health apps market size was estimated at <strong>USD 7.48 billion in 2024</strong>{" "}
+                    and is expected to expand at a <strong>CAGR of 14.6%</strong> from 2025 to 2030
+                    <a
+                      href="https://www.grandviewresearch.com/industry-analysis/mental-health-apps-market-report"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-[#8B9D8B] rounded-full hover:bg-[#6B8E6B] transition-colors ml-1"
+                      title="Grand View Research"
+                    >
+                      5
+                    </a>
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-[#8B9D8B] rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-sm sm:text-base">
+                    Employers and corporate wellness programs record the fastest projected{" "}
+                    <strong>CAGR at 17.68%</strong> to 2030
+                    <a
+                      href="https://www.mordorintelligence.com/industry-reports/mental-health-apps"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-[#8B9D8B] rounded-full hover:bg-[#6B8E6B] transition-colors ml-1"
+                      title="Mordor Intelligence"
+                    >
+                      6
+                    </a>
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-[#8B9D8B] rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-sm sm:text-base">
+                    <strong>Corporate wellness is the fastest-growing segment</strong>
+                  </p>
+                </div>
               </div>
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 bg-[#8B9D8B] rounded-full"></div>
-                <p className="text-sm sm:text-base">
-                  Parenting apps market <strong>$1.5-2.1B</strong> (2024) → <strong>$6B+</strong> by 2035, growing{" "}
-                  <strong>10-12% CAGR</strong>
-                </p>
+            </div>
+
+            {/* GCC/MENA Market Growth Analysis section */}
+            <div className="mt-8 pt-6 border-t border-[#8B9D8B]/20">
+              <h3 className="font-[family-name:var(--font-space-grotesk)] text-xl sm:text-2xl font-semibold mb-4 text-[#8B9D8B]">
+                GCC/MENA Market Growth Analysis
+              </h3>
+              <div className="space-y-3">
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-[#8B9D8B] rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-sm sm:text-base">
+                    The MENA digital health market was valued at <strong>USD 10,981.76 million in 2022</strong> and is
+                    expected to grow at a strong <strong>CAGR of around 19.6%</strong>
+                    <a
+                      href="https://univdatos.com/reports/mena-digital-health-market"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-[#8B9D8B] rounded-full hover:bg-[#6B8E6B] transition-colors ml-1"
+                      title="UnivDatos Market Insights"
+                    >
+                      7
+                    </a>
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-[#8B9D8B] rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-sm sm:text-base">
+                    The GCC Countries Digital Health Market is expected to witness a{" "}
+                    <strong>healthy and double-digit growth by 2027</strong>
+                    <a
+                      href="https://meditechinsights.com/gcc-countries-digital-health-market/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-[#8B9D8B] rounded-full hover:bg-[#6B8E6B] transition-colors ml-1"
+                      title="MediTech Insights"
+                    >
+                      8
+                    </a>
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-[#8B9D8B] rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-sm sm:text-base">
+                    Smartphone penetration rates in KSA and UAE are among the world's highest, at an estimated{" "}
+                    <strong>93 percent</strong>
+                    <a
+                      href="https://www.mckinsey.com/industries/public-sector/our-insights/growth-opportunities-for-digital-health-in-ksa-and-uae"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-[#8B9D8B] rounded-full hover:bg-[#6B8E6B] transition-colors ml-1"
+                      title="McKinsey & Company"
+                    >
+                      9
+                    </a>
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-[#8B9D8B] rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-sm sm:text-base">
+                    Middle East digital health market size reached <strong>USD 21,810.0 Million in 2024</strong> and is
+                    expected to reach <strong>USD 40,546.8 Million by 2033</strong>, exhibiting a{" "}
+                    <strong>CAGR of 7.13%</strong>
+                    <a
+                      href="https://www.imarcgroup.com/middle-east-digital-health-market"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-[#8B9D8B] rounded-full hover:bg-[#6B8E6B] transition-colors ml-1"
+                      title="IMARC Group"
+                    >
+                      10
+                    </a>
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-[#8B9D8B] rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-sm sm:text-base">
+                    <strong>Saudi Arabia dominated</strong> the Middle East digital health market with a revenue share
+                    in 2024. <strong>UAE is expected to grow at the fastest CAGR</strong> in the market during the
+                    forecast period
+                    <a
+                      href="https://www.grandviewresearch.com/industry-analysis/middle-east-digital-health-market-report"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-[#8B9D8B] rounded-full hover:bg-[#6B8E6B] transition-colors ml-1"
+                      title="Grand View Research - ME Digital Health"
+                    >
+                      11
+                    </a>
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-[#8B9D8B] rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-sm sm:text-base">
+                    PwC forecasts that AI could contribute{" "}
+                    <strong>US$320 billion to Middle East economies by 2030</strong>, with healthcare predicted to offer
+                    some of the biggest gains
+                    <a
+                      href="https://www.weforum.org/stories/2024/10/digital-innovation-reshaping-healthcare-middle-east/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-[#8B9D8B] rounded-full hover:bg-[#6B8E6B] transition-colors ml-1"
+                      title="World Economic Forum"
+                    >
+                      12
+                    </a>
+                  </p>
+                </div>
               </div>
+            </div>
+
+            <div className="mt-8 pt-6 border-t border-[#8B9D8B]/20">
+              <p className="text-xs text-neutral-500">
+                Sources: Grand View Research (2024), Roots Analysis (2024), Fortune Business Insights (2024), UN World
+                Population Prospects (2024), Mordor Intelligence (2024), UnivDatos Market Insights (2022), MediTech
+                Insights, McKinsey & Company, IMARC Group (2024), World Economic Forum (2024)
+              </p>
             </div>
           </div>
 
@@ -631,7 +855,7 @@ export default function Page() {
           <div className="bg-gradient-to-br from-[#8B9D8B] to-[#6B8E6B] text-white rounded-[32px] p-6 sm:p-10 border border-[#7A8C7A] min-h-[500px] flex flex-col justify-between">
             <div>
               <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-4xl font-bold mb-6">
-                Investment Ask
+                The Opportunity
               </h2>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
@@ -651,7 +875,7 @@ export default function Page() {
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                 <div className="text-center">
                   <div className="text-3xl sm:text-4xl font-bold mb-1">40%</div>
-                  <p className="text-xs sm:text-sm text-white/80">Team Building</p>
+                  <p className="text-xs sm:text-sm text-white/80">Talent Acquisition</p>
                   <p className="text-xs text-white/60">$120K</p>
                 </div>
                 <div className="text-center">
@@ -759,7 +983,130 @@ export default function Page() {
             </div>
           </div>
 
-          {/* Slide 10: Milestones */}
+          {/* Slide 10: GTM Strategy */}
+          <div className="bg-gradient-to-br from-white to-[#F5F5DC] rounded-[32px] p-6 sm:p-8 border border-[#8B9D8B]/20 min-h-[500px]">
+            <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-3 text-center">
+              Go-To-Market Strategy
+            </h2>
+            <p className="text-center text-[#666] mb-6 text-sm sm:text-base">
+              Three-phase approach to sustainable growth
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+              {/* Phase 1 */}
+              <div className="bg-white rounded-2xl p-5 border border-[#8B9D8B]/20">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-[#8B9D8B] to-[#6B7D6B] rounded-full flex items-center justify-center text-white font-bold">
+                    1
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-base">Community-Led</h3>
+                    <p className="text-xs text-[#999]">Months 1-6</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 text-xs text-[#666]">
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#8B9D8B] mt-0.5">•</span>
+                    <span>Mental health practitioners outreach </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#8B9D8B] mt-0.5">•</span>
+                    <span> Instagram/TikTok parenting tips</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#8B9D8B] mt-0.5">•</span>
+                    <span>UAE parenting Facebook groups & forums</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#8B9D8B] mt-0.5">•</span>
+                    <span>Influencer partnerships (parenting micro-influencers)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#8B9D8B] mt-0.5">•</span>
+                    <span className="font-semibold">Free tier = low friction entry point</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Phase 2 */}
+              <div className="bg-white rounded-2xl p-5 border border-[#8B9D8B]/20">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-[#FF9B7A] to-[#E87B5A] rounded-full flex items-center justify-center text-white font-bold">
+                    2
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-base">Strategic Partnerships</h3>
+                    <p className="text-xs text-[#999]">Months 6-12</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 text-xs text-[#666]">
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#FF9B7A] mt-0.5">•</span>
+                    <span>Pediatric clinics (QR codes in waiting rooms, co-branding)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#FF9B7A] mt-0.5">•</span>
+                    <span>Corporate wellness programs (employee benefit positioning)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#FF9B7A] mt-0.5">•</span>
+                    <span>Schools/nurseries partnerships</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#FF9B7A] mt-0.5">•</span>
+                    <span>Parenting expos & events</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Phase 3 */}
+              <div className="bg-white rounded-2xl p-5 border border-[#8B9D8B]/20">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-[#6B7D8B] to-[#4B5D6B] rounded-full flex items-center justify-center text-white font-bold">
+                    3
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-base">Paid Acquisition</h3>
+                    <p className="text-xs text-[#999]">Month 12+</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 text-xs text-[#666]">
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#6B7D8B] mt-0.5">•</span>
+                    <span>Meta/Google ads targeting parents 25-45</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#6B7D8B] mt-0.5">•</span>
+                    <span>Retargeting campaigns</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#6B7D8B] mt-0.5">•</span>
+                    <span className="font-semibold">Target CAC: $45</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Key Metrics */}
+            <div className="bg-gradient-to-r from-[#8B9D8B]/10 to-[#FF9B7A]/10 rounded-2xl p-4 border border-[#8B9D8B]/20">
+              <div className="grid grid-cols-3 gap-4 text-center">
+                <div>
+                  <p className="text-2xl font-bold text-[#8B9D8B]">$45</p>
+                  <p className="text-xs text-[#666]">Target CAC</p>
+                </div>
+                <div>
+                  <p className="text-2xl font-bold text-[#FF9B7A]">3x</p>
+                  <p className="text-xs text-[#666]">LTV:CAC Ratio</p>
+                </div>
+                <div>
+                  <p className="text-2xl font-bold text-[#6B7D8B]">12mo</p>
+                  <p className="text-xs text-[#666]">To Profitability</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Slide 11: Milestones */}
           <div className="bg-white rounded-[32px] p-6 sm:p-8 border border-[#8B9D8B]/20 min-h-[450px]">
             <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-6">
               Key Milestones (18 Months)
@@ -806,7 +1153,7 @@ export default function Page() {
             </div>
           </div>
 
-          {/* Slide 11: Vision */}
+          {/* Slide 12: Vision */}
           <div className="bg-gradient-to-br from-[#8B9D8B] to-[#6B8E6B] rounded-[32px] p-8 sm:p-12 min-h-[450px] flex flex-col justify-center">
             <div className="flex items-center gap-3 mb-6">
               <BrainIcon className="w-12 h-12 text-[#F5F5DC]" />
