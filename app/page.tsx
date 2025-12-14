@@ -817,7 +817,7 @@ export default function Page() {
                           <span className="text-xl">💳</span>
                           High Willingness to Pay
                         </h4>
-                        <p className="text-sm leading-relaxed text-neutral-700">
+                        <p className="text-sm leading-relaxed text-neutral-800">
                           A 2024 Oliver Wyman survey found that{" "}
                           <strong className="text-amber-700">80% of Saudis</strong> are willing to increase their number
                           of paid subscriptions (the highest rate globally), compared to flatlining growth in the West.
@@ -888,58 +888,51 @@ export default function Page() {
 
             <div className="bg-gradient-to-br from-[#8B9D8B] to-[#6B8E6B] text-white rounded-[32px] p-6 sm:p-8 border border-[#7A8C7A] min-h-[450px]">
               <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-3xl font-bold mb-6">
-                5-Year Revenue
+                Year 1: Financial Roadmap
               </h2>
-              <div className="space-y-6">
-                <div>
-                  <div className="flex justify-between mb-2">
-                    <span className="text-sm">Year 1</span>
-                    <span className="font-bold">$180K</span>
+
+              <div className="space-y-3 mb-6">
+                {/* Month 1-3 */}
+                <div className="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20">
+                  <div className="flex justify-between items-start mb-2">
+                    <div className="font-bold text-lg">Month 1-3: Build & Beta</div>
+                    <div className="text-sm font-semibold">$0 - $500</div>
                   </div>
-                  <div className="h-2 bg-white/20 rounded-full overflow-hidden">
-                    <div className="h-full bg-white rounded-full" style={{ width: "8%" }}></div>
-                  </div>
-                  <p className="text-xs text-white/70 mt-1">1,000 paying users</p>
+                  <p className="text-sm text-white/80">Focus: Product Fit</p>
                 </div>
-                <div>
-                  <div className="flex justify-between mb-2">
-                    <span className="text-sm">Year 3</span>
-                    <span className="font-bold">$4.5M</span>
+
+                {/* Month 4-6 */}
+                <div className="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20">
+                  <div className="flex justify-between items-start mb-2">
+                    <div className="font-bold text-lg">Month 4-6: Paid Testing</div>
+                    <div className="text-sm font-semibold">$1k - $2k</div>
                   </div>
-                  <div className="h-2 bg-white/20 rounded-full overflow-hidden">
-                    <div className="h-full bg-white rounded-full" style={{ width: "40%" }}></div>
-                  </div>
-                  <p className="text-xs text-white/70 mt-1">20,000 users + B2B partnerships</p>
+                  <p className="text-sm text-white/80">Focus: CAC Calibration</p>
                 </div>
-                <div>
-                  <div className="flex justify-between mb-2">
-                    <span className="text-sm">Year 5</span>
-                    <span className="font-bold">$22M</span>
+
+                {/* Month 12 Target */}
+                <div className="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20">
+                  <div className="flex justify-between items-start mb-2">
+                    <div className="font-bold text-lg">Month 12 Target</div>
+                    <div className="text-sm font-semibold">$16,500 MRR (60k AED)</div>
                   </div>
-                  <div className="h-2 bg-white/20 rounded-full overflow-hidden">
-                    <div className="h-full bg-white rounded-full" style={{ width: "100%" }}></div>
-                  </div>
-                  <p className="text-xs text-white/70 mt-1">80,000 users + B2B revenue</p>
+                  <p className="text-sm text-white/80">Active Subs: ~1,500</p>
                 </div>
               </div>
 
-              <div className="mt-8 bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20">
+              {/* Unit Economics */}
+              <div className="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20">
+                <h3 className="font-bold mb-3 text-lg">Unit Economics Target</h3>
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   <div>
-                    <div className="text-white/70 text-xs">CAC</div>
-                    <div className="font-bold">$45</div>
+                    <div className="text-white/70 text-xs mb-1">CAC</div>
+                    <div className="font-bold text-lg">&lt; $15</div>
+                    <div className="text-white/60 text-xs">(55 AED)</div>
                   </div>
                   <div>
-                    <div className="text-white/70 text-xs">Payback</div>
-                    <div className="font-bold">3 months</div>
-                  </div>
-                  <div>
-                    <div className="text-white/70 text-xs">Gross Margin</div>
-                    <div className="font-bold">85%</div>
-                  </div>
-                  <div>
-                    <div className="text-white/70 text-xs">LTV:CAC</div>
-                    <div className="font-bold">12:1</div>
+                    <div className="text-white/70 text-xs mb-1">LTV</div>
+                    <div className="font-bold text-lg">&gt; $180</div>
+                    <div className="text-white/60 text-xs">(660 AED)</div>
                   </div>
                 </div>
               </div>
@@ -1085,7 +1078,7 @@ export default function Page() {
           </div>
 
           {/* Slide 8: Investment Ask */}
-          <div className="bg-gradient-to-br from-[#8B9D8B] to-[#6B8E6B] text-white rounded-[32px] p-6 sm:p-10 border border-[#7A8C7A] min-h-[500px] flex flex-col justify-between">
+          <div className="bg-gradient-to-br from-[#8B9D8B] to-[#6B8E6B] rounded-[32px] p-6 sm:p-10 border border-[#7A8C7A] min-h-[500px] flex flex-col justify-between">
             <div>
               <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-4xl font-bold mb-6">
                 The Opportunity
