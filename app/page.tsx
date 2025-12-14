@@ -713,7 +713,8 @@ export default function Page() {
                     <p className="text-base sm:text-lg leading-relaxed text-center">
                       The global <strong>Mental Health Apps market</strong> was valued at{" "}
                       <span className="text-[#8B9D8B] font-bold text-xl">$6.52 Billion in 2024</span> and is projected
-                      to hit <span className="text-[#8B9D8B] font-bold text-xl">$23.8 Billion by 2032</span> (
+                      to hit
+                      <span className="text-[#8B9D8B] font-bold text-xl">$23.8 Billion by 2032</span> (
                       <strong>18% CAGR</strong>).
                     </p>
                     <div className="bg-white/80 rounded-lg p-4 border border-[#8B9D8B]/20">
@@ -1098,26 +1099,21 @@ export default function Page() {
               </div>
 
               <h3 className="font-bold text-xl mb-4">Use of Funds</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div className="text-center">
-                  <div className="text-3xl sm:text-4xl font-bold mb-1">40%</div>
-                  <p className="text-xs sm:text-sm text-white/80">Talent Acquisition</p>
-                  <p className="text-xs text-white/60">$120K</p>
+                  <div className="text-3xl sm:text-4xl font-bold mb-1">45%</div>
+                  <p className="text-xs sm:text-sm text-white/80 font-semibold">Product/Engineering</p>
+                  <p className="text-xs text-white/70 mt-1">Building the "Safety Layer" (RAG Engine)</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl sm:text-4xl font-bold mb-1">35%</div>
-                  <p className="text-xs sm:text-sm text-white/80">Marketing</p>
-                  <p className="text-xs text-white/60">$105K</p>
+                  <div className="text-3xl sm:text-4xl font-bold mb-1">40%</div>
+                  <p className="text-xs sm:text-sm text-white/80 font-semibold">Growth Experiments</p>
+                  <p className="text-xs text-white/70 mt-1">Search Intent ads & Influencer/Barter program</p>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl sm:text-4xl font-bold mb-1">15%</div>
-                  <p className="text-xs sm:text-sm text-white/80">Product Dev</p>
-                  <p className="text-xs text-white/60">$45K</p>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl sm:text-4xl font-bold mb-1">10%</div>
-                  <p className="text-xs sm:text-sm text-white/80">Operations</p>
-                  <p className="text-xs text-white/60">$30K</p>
+                  <p className="text-xs sm:text-sm text-white/80 font-semibold">Operations/Legal</p>
+                  <p className="text-xs text-white/70 mt-1">Data privacy compliance (UAE PDPL)</p>
                 </div>
               </div>
             </div>
