@@ -373,7 +373,8 @@ export default function Page() {
                   <div className="bg-white/80 p-3 rounded-lg">
                     <p className="text-sm text-red-800 mb-2 font-semibold">Response:</p>
                     <p className="text-xs text-red-700">
-                      &quot;Gotcha, here is a 5 step approach you can take. First tell your child you understand, then calm them down&quot;
+                      &quot;Gotcha, here is a 5 step approach you can take. First tell your child you understand, then
+                      calm them down&quot;
                     </p>
                   </div>
                   <div className="flex flex-wrap gap-2 text-xs">
@@ -778,6 +779,77 @@ export default function Page() {
                         16
                       </a>
                     </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-amber-50 to-white/50 backdrop-blur rounded-2xl p-6 border border-amber-200">
+                <div className="space-y-4">
+                  <div className="flex justify-center">
+                    <div className="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center">
+                      <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="font-[family-name:var(--font-space-grotesk)] text-xl sm:text-2xl font-bold text-center text-amber-800">
+                      The GCC Regional Context
+                    </h3>
+                    <p className="text-base leading-relaxed text-center text-neutral-700">
+                      GCC is a sophisticated market that behaves very differently from the US/Europe. The MENA region
+                      (specifically UAE & KSA) has the{" "}
+                      <strong>highest smartphone penetration in the world (99%+)</strong> and a culture that deeply
+                      values privacy and family reputation.
+                    </p>
+
+                    {/* Key Context Points */}
+                    <div className="space-y-3">
+                      {/* High Willingness to Pay */}
+                      <div className="bg-white/90 rounded-lg p-4 border border-amber-200">
+                        <h4 className="font-bold text-amber-800 mb-2 flex items-center gap-2">
+                          <span className="text-xl">💳</span>
+                          High Willingness to Pay
+                        </h4>
+                        <p className="text-sm leading-relaxed text-neutral-700">
+                          A 2024 Oliver Wyman survey found that{" "}
+                          <strong className="text-amber-700">80% of Saudis</strong> are willing to increase their number
+                          of paid subscriptions (the highest rate globally), compared to flatlining growth in the West.
+                        </p>
+                      </div>
+
+                      {/* The Nanny Gap */}
+                      <div className="bg-white/90 rounded-lg p-4 border border-amber-200">
+                        <h4 className="font-bold text-amber-800 mb-2 flex items-center gap-2">
+                          <span className="text-xl">👶</span>
+                          The "Nanny Gap"
+                        </h4>
+                        <p className="text-sm leading-relaxed text-neutral-700">
+                          In the UAE, many families have nannies for physical care (feeding/cleaning), but parents are
+                          anxious about developmental and behavioral milestones. They don't need a "tracker"; they need
+                          a <strong className="text-amber-700">"Supervisor/Expert."</strong>
+                        </p>
+                      </div>
+
+                      {/* Trust Economy */}
+                      <div className="bg-white/90 rounded-lg p-4 border border-amber-200">
+                        <h4 className="font-bold text-amber-800 mb-2 flex items-center gap-2">
+                          <span className="text-xl">🤝</span>
+                          Trust Economy
+                        </h4>
+                        <p className="text-sm leading-relaxed text-neutral-700">
+                          In the Gulf, trust is not gained through ads; it is gained through{" "}
+                          <strong className="text-amber-700">Influencers (Mom-fluencers)</strong> on Snapchat and
+                          TikTok.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
