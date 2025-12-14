@@ -1151,10 +1151,14 @@ export default function Page() {
                   />
                 </div>
                 <h3 className="font-bold text-lg mb-1">Ivan Doncic</h3>
-                <p className="text-sm text-[#8B9D8B] font-semibold mb-3">CEO & Founder</p>
-                <div className="text-xs text-[#666] space-y-1 text-left w-full">
+                <p className="text-sm font-semibold mb-3">
+                  <span className="text-[#5A8F5A]">CEO & Product</span>
+                </p>
+                <div className="text-xs text-neutral-800 space-y-1 text-left w-full">
                   <p className="leading-relaxed">
-                    15 years in digital analytics, specializing in AI platform integration and behavioral analysis
+                    15 years in digital analytics, specializing in{" "}
+                    <strong className="text-[#5A8F5A]">AI platform integration and behavioral analysis</strong> — vital
+                    for AI fit
                   </p>
                   <p className="text-[#999] mt-2">
                     <strong>Previous clients:</strong> Mubadala Healthcare, World Economic Forum, Pininfarina, ADQ, EGA
@@ -1174,10 +1178,14 @@ export default function Page() {
                   />
                 </div>
                 <h3 className="font-bold text-lg mb-1">Marko Cvijic</h3>
-                <p className="text-sm text-[#8B9D8B] font-semibold mb-3">CTO & Head of Digital Acquisition</p>
-                <div className="text-xs text-[#666] space-y-1 text-left w-full">
+                <p className="text-sm font-semibold mb-3">
+                  <span className="text-[#5A8F5A]">CTO & Acquisition</span>
+                </p>
+                <div className="text-xs text-neutral-800 space-y-1 text-left w-full">
                   <p className="leading-relaxed">
-                    Expert in technical architecture and digital strategy for global organizations
+                    Expert in technical architecture and{" "}
+                    <strong className="text-[#5A8F5A]">digital acquisition strategy</strong> for global organizations —
+                    vital for getting users
                   </p>
                   <p className="text-[#999] mt-2">
                     <strong>Experience:</strong> World Economic Forum, United Nations, EGA
