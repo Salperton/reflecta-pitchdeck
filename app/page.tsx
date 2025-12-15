@@ -275,6 +275,23 @@ export default function Page() {
                 </div>
                 <div className="flex gap-3">
                   <span className="text-[#FF6B6B] flex-shrink-0">
+                    <DoodleStress />
+                  </span>
+                  <p className="text-sm sm:text-base">
+                    <strong>57%</strong> of parents self-reported burnout{" "}
+                    <a
+                      href="https://wexnermedical.osu.edu/blog/parental-burnout"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-[#8B9D8B] rounded-full hover:bg-[#6B8E6B] transition-colors"
+                      title="Ohio State University Study, 2023"
+                    >
+                      3
+                    </a>
+                  </p>
+                </div>
+                <div className="flex gap-3">
+                  <span className="text-[#FF6B6B] flex-shrink-0">
                     <DoodleSearch />
                   </span>
                   <p className="text-sm sm:text-base">
@@ -286,7 +303,7 @@ export default function Page() {
                       className="inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-[#8B9D8B] rounded-full hover:bg-[#6B8E6B] transition-colors"
                       title="View reference"
                     >
-                      3
+                      4
                     </a>
                   </p>
                 </div>
@@ -303,7 +320,7 @@ export default function Page() {
                       className="inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-[#8B9D8B] rounded-full hover:bg-[#6B8E6B] transition-colors"
                       title="View reference"
                     >
-                      4
+                      5
                     </a>
                   </p>
                 </div>
@@ -461,8 +478,9 @@ export default function Page() {
                   </h3>
                   <p className="text-sm sm:text-base text-[#666] leading-relaxed">
                     We use a RAG engine to cross-reference every answer against{" "}
-                    <span className="font-bold text-[#8B9D8B]">10,000+ peer-reviewed pediatric journals</span>. No
-                    guesswork. No generic advice. Just evidence-based guidance you can trust.
+                    <span className="font-bold text-[#8B9D8B]">500,000+ peer-reviewed studies</span>, with{" "}
+                    <span className="font-bold text-[#8B9D8B]">100+ hand-curated papers</span> scored by our proprietary
+                    quality algorithm. No guesswork. No generic advice. Just evidence-based guidance you can trust.
                   </p>
                 </div>
               </div>
@@ -1031,7 +1049,6 @@ export default function Page() {
           </div>
 
           {/* Slide 8: Traction */}
-          
 
           {/* Slide 11: GTM Strategy */}
           <div className="bg-white rounded-[32px] p-10 sm:p-14 border border-[#8B9D8B]/20 min-h-[450px]">
