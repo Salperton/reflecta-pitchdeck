@@ -1267,7 +1267,7 @@ export default function Page() {
                     <h3 className="font-[family-name:var(--font-space-grotesk)] text-lg font-bold mb-1">
                       Marko Cvijic
                     </h3>
-                    <p className="text-sm font-semibold text-[#8B9D8B]">Co-CTO &amp; 
+                    <p className="text-sm font-semibold text-[#8B9D8B]">Co-CTO &amp;       
 Head of Digital Acquisition</p>
                   </div>
                 </div>
@@ -1315,7 +1315,7 @@ Head of GrowthD8B]">CFO & Head of Growth</p>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#8B9D8B] mt-0.5 flex-shrink-0">•</span>
-                    <span>Former positions at First Abu Dhabi Bank and Citibank</span>
+                    <span>Former Director at First Abu Dhabi Bank and Citibank</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#8B9D8B] mt-0.5 flex-shrink-0">•</span>
