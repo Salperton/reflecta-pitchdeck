@@ -337,3 +337,22 @@ export const PhoneIcon = () => (
     />
   </svg>
 )
+
+export const DoodleCamera = () => (
+  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="4" y="8" width="24" height="18" rx="2" stroke="currentColor" strokeWidth="2" />
+    <circle cx="16" cy="17" r="5" stroke="currentColor" strokeWidth="2" />
+    <circle cx="16" cy="17" r="2" fill="currentColor" />
+    <path d="M12 8L14 4H18L20 8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <circle cx="23" cy="11" r="1" fill="currentColor" />
+  </svg>
+)
+
+export const DoodlePhone = () => (
+  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="10" y="4" width="12" height="24" rx="2" stroke="currentColor" strokeWidth="2" />
+    <path d="M10 24H22" stroke="currentColor" strokeWidth="2" />
+    <circle cx="16" cy="26" r="1" fill="currentColor" />
+    <path d="M14 7H18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+  </svg>
+)

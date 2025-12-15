@@ -8,7 +8,7 @@ import Image from "next/image"
 import {
   DoodleWarning,
   DoodleStress,
-  DoodleSearch,
+  DoodleSearch, // Added DoodleSearch import
   DoodleLock,
   DoodleCheckmark,
   DoodleLightning,
@@ -23,6 +23,9 @@ import {
   DoodlePeople, // Added DoodlePeople
   DoodleGear, // Added DoodleGear
   DoodleMoney, // Added DoodleMoney import
+  DoodleCamera, // Added DoodleCamera import
+  DoodlePhone, // Added DoodlePhone import
+  DoodleTarget, // Added DoodleTarget import
 } from "@/components/doodle-icons"
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -1151,14 +1154,14 @@ export default function Page() {
                 <p className="text-xs text-[#666] mb-3 italic">Focus: CAC Validation</p>
                 <ul className="space-y-2 text-xs text-[#666]">
                   <li className="flex items-start gap-2">
-                    <span className="text-[#FF9B7A] mt-0.5">🔍</span>
+                    <DoodleSearch className="w-4 h-4 text-[#FF9B7A] flex-shrink-0 mt-0.5" />
                     <span>
                       <strong>Google Search Ads:</strong> Sniping high-anxiety queries (e.g., "Toddler fever 39C what to
                       do")
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#FF9B7A] mt-0.5">📸</span>
+                    <DoodleCamera className="w-4 h-4 text-[#FF9B7A] flex-shrink-0 mt-0.5" />
                     <span>
                       <strong>Instagram Reels Ads:</strong> High-visual "Stop the Scroll" video ads targeting UAE
                       parents. Focus on "Medical Safety" messaging
@@ -1187,13 +1190,13 @@ export default function Page() {
                 <p className="text-xs text-[#666] mb-3 italic">Focus: Expansion & Localization</p>
                 <ul className="space-y-2 text-xs text-[#666]">
                   <li className="flex items-start gap-2">
-                    <span className="text-[#6B7D6B] mt-0.5">📱</span>
+                    <DoodlePhone className="w-4 h-4 text-[#6B7D6B] flex-shrink-0 mt-0.5" />
                     <span>
                       <strong>Snapchat & TikTok:</strong> Paid partnerships with "Micro-Influencers" (KSA Focus)
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#6B7D6B] mt-0.5">🔄</span>
+                    <DoodleTarget className="w-4 h-4 text-[#6B7D6B] flex-shrink-0 mt-0.5" />
                     <span>
                       <strong>Retargeting Loops:</strong> Showing "Success Story" ads on Instagram to users who visited
                       from Google but didn't sign up
