@@ -287,7 +287,7 @@ export default function Page() {
                   <p className="text-sm sm:text-base">
                     <strong>57%</strong> of parents self-reported burnout{" "}
                     <a
-                      href="https://wexnermedical.osu.edu/blog/parental-burnout"
+                      href="https://www.sciencedirect.com/science/article/pii/S0193397324000868"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-[#8B9D8B] rounded-full hover:bg-[#6B8E6B] transition-colors"
@@ -406,13 +406,18 @@ export default function Page() {
                   <div className="bg-white/80 p-3 rounded-lg">
                     <p className="text-sm text-red-800 mb-2 font-semibold">Response:</p>
                     <p className="text-xs text-red-700">
-                      "I’m so sorry you’re going through this. Here is a simple 5-step approach that might help: First, validate their feelings so they feel heard, then help them settle their emotions. Ensure they are in a safe space, and once they've calmed down, gently explain the situation to them. Give that a try and let me know how it goes!" 
+                      "I’m so sorry you’re going through this. Here is a simple 5-step approach that might help: First,
+                      validate their feelings so they feel heard, then help them settle their emotions. Ensure they are
+                      in a safe space, and once they've calmed down, gently explain the situation to them. Give that a
+                      try and let me know how it goes!"
                     </p>
                   </div>
                   <div className="flex flex-wrap gap-2 text-xs">
                     <span className="bg-red-100 text-red-700 px-2 py-1 rounded-full">❌ No citations</span>
                     <span className="bg-red-100 text-red-700 px-2 py-1 rounded-full">❌ Generic advice</span>
-                    <span className="bg-red-100 text-red-700 px-2 py-1 rounded-full">⚠️ No recall in memory for follow-up    </span>
+                    <span className="bg-red-100 text-red-700 px-2 py-1 rounded-full">
+                      ⚠️ No recall in memory for follow-up{" "}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -449,7 +454,9 @@ export default function Page() {
                     <span className="bg-[#8B9D8B]/20 text-[#1a1a1a] px-2 py-1 rounded-full">
                       ✅ Age-specific guidance
                     </span>
-                    <span className="bg-[#8B9D8B]/20 text-[#1a1a1a] px-2 py-1 rounded-full">✅ Stored in memory for follow-up    </span>
+                    <span className="bg-[#8B9D8B]/20 text-[#1a1a1a] px-2 py-1 rounded-full">
+                      ✅ Stored in memory for follow-up{" "}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -1306,11 +1313,17 @@ export default function Page() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#8B9D8B] mt-0.5 flex-shrink-0">•</span>
-                    <span>Managed  digital campaigns for World Economic Forum, ADQ, EGA, World Bank, Amazon, Microsoft among other.</span>
+                    <span>
+                      Managed digital campaigns for World Economic Forum, ADQ, EGA, World Bank, Amazon, Microsoft among
+                      other.
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#8B9D8B] mt-0.5 flex-shrink-0">•</span>
-                    <span>Skilled in RAG systems, API integrations, and scalable web applications. Google-certified senior ads expert</span>
+                    <span>
+                      Skilled in RAG systems, API integrations, and scalable web applications. Google-certified senior
+                      ads expert
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#8B9D8B] mt-0.5 flex-shrink-0">•</span>
