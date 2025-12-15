@@ -199,7 +199,7 @@ export default function Page() {
       <div className="min-h-screen bg-[#F5F5DC] text-[#1a1a1a] flex justify-center px-4 sm:px-6 lg:px-8 py-6 sm:py-10">
         <div ref={contentRef} className="w-full max-w-[1200px] flex flex-col gap-6">
           {/* Slide 1: Title Slide */}
-          <div className="bg-gradient-to-br from-[#8B9D8B] to-[#6B8E6B] rounded-[32px] p-8 sm:p-12 min-h-[500px] flex flex-col justify-between border border-[#7A8C7A] overflow-hidden">
+          <div className="bg-gradient-to-br from-[#8B9D8B] to-[#6B8E6B] rounded-[32px] p-10 sm:p-16 min-h-[500px] flex flex-col justify-between border border-[#7A8C7A] overflow-hidden">
             <div className="flex justify-between items-start">
               <div className="rounded-2xl px-4 py-2 text-[rgba(251,242,235,1)] bg-[rgba(251,242,235,1)]">
                 <Image
@@ -211,7 +211,7 @@ export default function Page() {
                   priority
                 />
               </div>
-              <span className="text-sm text-white/80">Investor Deck 2025</span>
+              <span className="text-2xl text-white/80 font-semibold">Investor Deck 2025</span>
             </div>
 
             <div className="space-y-4">
@@ -230,7 +230,7 @@ export default function Page() {
           </div>
 
           {/* Slide 2: The Problem */}
-          <div className="bg-white/90 backdrop-blur rounded-[32px] p-8 sm:p-12 min-h-[500px] border border-[#8B9D8B]/20 overflow-hidden">
+          <div className="bg-white/90 backdrop-blur rounded-[32px] p-10 sm:p-16 border border-[#8B9D8B]/20 overflow-hidden">
             <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-4xl font-bold mb-6 text-[#8B9D8B]">
               The Problem
             </h2>
@@ -352,7 +352,7 @@ export default function Page() {
           </div>
 
           {/* Slide 3: The Solution */}
-          <div className="bg-gradient-to-br from-white to-[#F5F5DC] rounded-[32px] p-6 sm:p-8 border border-[#8B9D8B]/20 min-h-[500px]">
+          <div className="bg-gradient-to-br from-white to-[#F5F5DC] rounded-[32px] p-10 sm:p-14 border border-[#8B9D8B]/20 min-h-[500px]">
             <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-6">
               The Solution: Reflecta
             </h2>
@@ -470,7 +470,7 @@ export default function Page() {
           </div>
 
           {/* Slide 4: Market Opportunity */}
-          <div className="bg-white/90 backdrop-blur rounded-[32px] p-8 sm:p-12 min-h-[500px] border border-[#8B9D8B]/20 overflow-hidden">
+          <div className="bg-white/90 backdrop-blur rounded-[32px] p-10 sm:p-14 border border-[#8B9D8B]/20 overflow-hidden">
             <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-4xl font-bold mb-8 text-[#8B9D8B]">
               Market Opportunity
             </h2>
@@ -681,7 +681,7 @@ export default function Page() {
           </div>
 
           {/* Slide 5: Why Now? */}
-          <div className="bg-white/90 backdrop-blur rounded-[32px] p-8 sm:p-12 min-h-[500px] border border-[#8B9D8B]/20 overflow-hidden">
+          <div className="bg-white/90 backdrop-blur rounded-[32px] p-10 sm:p-14 border border-[#8B9D8B]/20 overflow-hidden">
             <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-4xl font-bold mb-4 text-[#8B9D8B]">
               Why Now?
             </h2>
@@ -859,7 +859,7 @@ export default function Page() {
 
           {/* Slide 6: Business Model */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-            <div className="bg-white rounded-[32px] p-6 sm:p-8 border border-[#8B9D8B]/20 min-h-[450px]">
+            <div className="bg-white rounded-[32px] p-10 sm:p-14 border border-[#8B9D8B]/20 min-h-[450px]">
               <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-3xl font-bold mb-6">
                 B2C Subscription Tiers
               </h2>
@@ -887,7 +887,7 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-[#8B9D8B] to-[#6B8E6B] text-white rounded-[32px] p-6 sm:p-8 border border-[#7A8C7A] min-h-[450px]">
+            <div className="bg-gradient-to-br from-[#8B9D8B] to-[#6B8E6B] text-white rounded-[32px] p-10 sm:p-14 border border-[#7A8C7A] min-h-[450px]">
               <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-3xl font-bold mb-6">
                 Year 1: Financial Roadmap
               </h2>
@@ -941,7 +941,7 @@ export default function Page() {
           </div>
 
           {/* Slide 7: Competitive Advantage */}
-          <div className="bg-white rounded-[32px] p-6 sm:p-8 border border-[#8B9D8B]/20 min-h-[500px]">
+          <div className="bg-white rounded-[32px] p-10 sm:p-14 border border-[#8B9D8B]/20 min-h-[450px]">
             <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-6">
               Competitive Advantage
             </h2>
@@ -1031,190 +1031,60 @@ export default function Page() {
           </div>
 
           {/* Slide 8: Traction */}
-          <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] text-white rounded-[32px] p-6 sm:p-8 border border-[#404040] min-h-[450px] flex flex-col justify-center items-center text-center overflow-hidden relative">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-[#8B9D8B]/10 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#8B9D8B]/10 rounded-full blur-3xl"></div>
-
-            <div className="relative z-10">
-              <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-4">
-                Traction & Validation
-              </h2>
-              <p className="text-lg sm:text-xl text-white/90 mb-8 max-w-2xl">
-                Every parent deserves access to evidence-based knowledge, delivered with empathy, personalization, and
-                24/7 availability.
-              </p>
-
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
-                <div className="bg-white/5 p-4 rounded-xl border border-white/10">
-                  <div className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-1">
-                    1M
-                  </div>
-                  <p className="text-xs sm:text-sm">Families Supported</p>
-                </div>
-                <div className="bg-white/5 p-4 rounded-xl border border-white/10">
-                  <div className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-1">
-                    10K+
-                  </div>
-                  <p className="text-xs sm:text-sm">Clinicians</p>
-                </div>
-                <div className="bg-white/5 p-4 rounded-xl border border-white/10">
-                  <div className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-1">
-                    15+
-                  </div>
-                  <p className="text-xs sm:text-sm">Global Markets</p>
-                </div>
-                <div className="bg-white/5 p-4 rounded-xl border border-white/10">
-                  <div className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-1">
-                    50M+
-                  </div>
-                  <p className="text-xs sm:text-sm">Questions Answered</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative z-10 bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-3 rounded-full font-bold">
-              We are not just building a parenting app , we are creating a new category of AI-powered, evidence-based
-              healthcare support that could expand to eldercare, chronic disease management, and mental health.
-            </div>
-          </div>
-
-          {/* Slide 9: Investment Ask */}
-          <div className="bg-gradient-to-br from-[#8B9D8B] to-[#6B8E6B] rounded-[32px] p-8 sm:p-12 min-h-[500px] flex flex-col justify-between">
-            <div>
-              <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-4xl font-bold mb-6">
-                The Opportunity
-              </h2>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
-                <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
-                  <div className="text-sm text-white/70 mb-2">Seeking</div>
-                  <div className="font-[family-name:var(--font-space-grotesk)] text-5xl font-bold mb-2">$300K</div>
-                  <p className="text-sm">Seed Round</p>
-                </div>
-                <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
-                  <div className="text-sm text-white/70 mb-2">Pre-Money Valuation</div>
-                  <div className="font-[family-name:var(--font-space-grotesk)] text-5xl font-bold mb-2">$3M</div>
-                  <p className="text-sm">10% equity offered</p>
-                </div>
-              </div>
-
-              <h3 className="font-bold text-xl mb-4">Use of Funds</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <div className="text-center">
-                  <div className="text-3xl sm:text-4xl font-bold mb-1">45%</div>
-                  <p className="text-xs sm:text-sm text-white/80 font-semibold">Product/Engineering</p>
-                  <p className="text-xs text-white/70 mt-1">Building the "Safety Layer" (RAG Engine)</p>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl sm:text-4xl font-bold mb-1">40%</div>
-                  <p className="text-xs sm:text-sm text-white/80 font-semibold">Growth Experiments</p>
-                  <p className="text-xs text-white/70 mt-1">Search Intent ads & Influencer/Barter program</p>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl sm:text-4xl font-bold mb-1">15%</div>
-                  <p className="text-xs sm:text-sm text-white/80 font-semibold">Operations/Legal</p>
-                  <p className="text-xs text-white/70 mt-1">Data privacy compliance (UAE PDPL)</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20 mt-6">
-              <p className="text-sm text-center">
-                <strong>18-month runway</strong> to Series A-ready metrics: $1.6M ARR, 7,500+ paying users
-              </p>
-            </div>
-          </div>
-
-          {/* Slide 10: Team */}
-          <div className="bg-gradient-to-br from-white to-[#F5F5DC] rounded-[32px] p-6 sm:p-8 border border-[#8B9D8B]/20 min-h-[500px]">
-            <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-3 text-center">
-              Our Team
+          <div className="bg-white rounded-[32px] p-10 sm:p-14 border border-[#8B9D8B]/20 min-h-[450px]">
+            <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-6">
+              Traction & Validation
             </h2>
-            <p className="text-center text-[#666] mb-8 text-sm sm:text-base">
-              Proven expertise in digital analytics, healthcare, and finance
+            <p className="text-lg sm:text-xl text-neutral-600 mb-8">
+              Every parent deserves access to evidence-based knowledge, delivered with empathy, personalization, and
+              24/7 availability.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Ivan Doncic */}
-              <div className="bg-white rounded-2xl p-5 border border-[#8B9D8B]/20 flex flex-col items-center text-center">
-                <div className="w-32 h-32 mb-4 rounded-full overflow-hidden bg-gradient-to-br from-[#e8f0e8] to-[#d8e8d8] flex items-center justify-center">
-                  <Image
-                    src="/images/team/ivan-doncic.png"
-                    alt="Ivan Doncic"
-                    width={128}
-                    height={128}
-                    className="w-full h-full object-cover"
-                  />
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+              <div className="bg-white/80 backdrop-blur rounded-2xl p-6 border border-[#8B9D8B]/20">
+                <div className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-1">
+                  1M
                 </div>
-                <h3 className="font-bold text-lg mb-1">Ivan Doncic</h3>
-                <p className="text-sm font-semibold mb-3">
-                  <span className="text-[#5A8F5A]">CEO & Product</span>
-                </p>
-                <div className="text-xs text-neutral-800 space-y-1 text-left w-full">
-                  <p className="leading-relaxed">
-                    15 years in digital analytics, specializing in{" "}
-                    <strong className="text-[#5A8F5A]">AI platform integration and behavioral analysis</strong> — vital
-                    for AI fit
-                  </p>
-                  <p className="text-[#999] mt-2">
-                    <strong>Previous clients:</strong> Mubadala Healthcare, World Economic Forum, Pininfarina, ADQ, EGA
-                  </p>
-                </div>
+                <p className="text-xs sm:text-sm">Families Supported</p>
               </div>
+              <div className="bg-white/80 backdrop-blur rounded-2xl p-6 border border-[#8B9D8B]/20">
+                <div className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-1">
+                  10K+
+                </div>
+                <p className="text-xs sm:text-sm">Clinicians</p>
+              </div>
+              <div className="bg-white/80 backdrop-blur rounded-2xl p-6 border border-[#8B9D8B]/20">
+                <div className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-1">
+                  15+
+                </div>
+                <p className="text-xs sm:text-sm">Global Markets</p>
+              </div>
+              <div className="bg-white/80 backdrop-blur rounded-2xl p-6 border border-[#8B9D8B]/20">
+                <div className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-1">
+                  50M+
+                </div>
+                <p className="text-xs sm:text-sm">Questions Answered</p>
+              </div>
+            </div>
 
-              {/* Marko Cvijic */}
-              <div className="bg-white rounded-2xl p-5 border border-[#8B9D8B]/20 flex flex-col items-center text-center">
-                <div className="w-32 h-32 mb-4 rounded-full overflow-hidden bg-gradient-to-br from-[#d8e0e8] to-[#c8d8e8] flex items-center justify-center">
-                  <Image
-                    src="/images/team/marko-cvijic.jpeg"
-                    alt="Marko Cvijic"
-                    width={128}
-                    height={128}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 className="font-bold text-lg mb-1">Marko Cvijic</h3>
-                <p className="text-sm font-semibold mb-3">
-                  <span className="text-[#5A8F5A]">CTO & Acquisition</span>
-                </p>
-                <div className="text-xs text-neutral-800 space-y-1 text-left w-full">
-                  <p className="leading-relaxed">
-                    Expert in technical architecture and{" "}
-                    <strong className="text-[#5A8F5A]">digital acquisition strategy</strong> for global organizations —
-                    vital for getting users
-                  </p>
-                  <p className="text-[#999] mt-2">
-                    <strong>Experience:</strong> World Economic Forum, United Nations, EGA
-                  </p>
-                </div>
-              </div>
+            <div className="mt-8 pt-6 border-t border-[#8B9D8B]/20">
+              <p className="text-xs text-neutral-500">
+                Sources: Grand View Research (2024), Roots Analysis (2024), Fortune Business Insights (2024), UN World
+                Population Prospects (2024), Mordor Intelligence (2024), UnivDatos Market Insights (2022), MediTech
+                Insights, McKinsey & Company, IMARC Group (2024), World Economic Forum (2024)
+              </p>
+            </div>
 
-              {/* John Lochrie */}
-              <div className="bg-white rounded-2xl p-5 border border-[#8B9D8B]/20 flex flex-col items-center text-center">
-                <div className="w-32 h-32 mb-4 rounded-full overflow-hidden bg-gradient-to-br from-[#d8e0e8] to-[#c8d8e8] flex items-center justify-center">
-                  <Image
-                    src="/images/team/john-lochrie.jpeg"
-                    alt="John Lochrie"
-                    width={128}
-                    height={128}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 className="font-bold text-lg mb-1">John Lochrie</h3>
-                <p className="text-sm text-[#8B9D8B] font-semibold mb-3">CFO & Head of Growth</p>
-                <div className="text-xs text-[#666] space-y-1 text-left w-full">
-                  <p className="leading-relaxed">Extensive financial leadership across top-tier banking institutions</p>
-                  <p className="text-[#999] mt-2">
-                    <strong>Experience:</strong> Director at Barclays Bank, Executive Director at First Abu Dhabi Bank,
-                    VP at Citibank
-                  </p>
-                </div>
-              </div>
+            <div className="mt-8 bg-[#8B9D8B]/10 p-4 rounded-xl border border-[#8B9D8B]/20">
+              <p className="text-sm text-center">
+                We are not just building a parenting app , we are creating a new category of AI-powered, evidence-based
+                healthcare support that could expand to eldercare, chronic disease management, and mental health.
+              </p>
             </div>
           </div>
 
           {/* Slide 11: GTM Strategy */}
-          <div className="bg-gradient-to-br from-white to-[#F5F5DC] rounded-[32px] p-6 sm:p-8 border border-[#8B9D8B]/20 min-h-[500px]">
+          <div className="bg-white rounded-[32px] p-10 sm:p-14 border border-[#8B9D8B]/20 min-h-[450px]">
             <h2 className="text-xl sm:text-2xl font-bold text-center text-[#2C3E2C] mb-2">Go-To-Market Strategy</h2>
             <p className="text-center text-[#666] mb-6 text-sm sm:text-base">
               From "Zero" to "Scale": A 12-Month Execution Roadmap
@@ -1337,8 +1207,8 @@ export default function Page() {
             </div>
           </div>
 
-          {/* Slide 12: Milestones */}
-          <div className="bg-white rounded-[32px] p-6 sm:p-8 border border-[#8B9D8B]/20 min-h-[450px]">
+          {/* Slide 10: Milestones */}
+          <div className="bg-white rounded-[32px] p-10 sm:p-14 border border-[#8B9D8B]/20 min-h-[450px]">
             <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-6">
               Post-Launch Key Milestones (18 Months)
             </h2>
@@ -1390,7 +1260,7 @@ export default function Page() {
           </div>
 
           {/* Slide 13: Vision */}
-          <div className="bg-gradient-to-br from-[#8B9D8B] to-[#6B8E6B] rounded-[32px] p-8 sm:p-12 min-h-[500px] border border-[#7A8C7A] flex flex-col">
+          <div className="bg-gradient-to-br from-[#8B9D8B] to-[#6B8E6B] rounded-[32px] p-10 sm:p-16 border border-[#7A8C7A] min-h-[500px] flex flex-col justify-between">
             <div className="flex items-center gap-4 mb-6">
               <DoodleRocket className="w-12 h-12 text-[#F5F5DC]" />
               <h2 className="font-[family-name:var(--font-space-grotesk)] text-4xl sm:text-5xl font-bold text-white">
