@@ -949,9 +949,6 @@ export default function Page() {
 
               {/* Slide 7: Year 1 Financial Roadmap */}
               <div className="bg-gradient-to-br from-white to-[#F5F5DC] rounded-[32px] p-10 sm:p-14 border border-[#8B9D8B]/20 overflow-hidden relative">
-                <div className="absolute top-4 left-4 text-xs font-semibold text-[#8B9D8B]/60 bg-[#8B9D8B]/5 px-3 py-1 rounded-full">
-                  Slide 6
-                </div>
                 <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl font-bold mb-6 sm:text-2xl">
                   Year 1: Financial Roadmap
                 </h2>
@@ -1011,7 +1008,7 @@ export default function Page() {
           {/* Slide 8: Competitive Advantage */}
           <div className="bg-white rounded-[32px] p-10 sm:p-14 border border-[#8B9D8B]/20 overflow-hidden relative">
             <div className="absolute top-4 left-4 text-xs font-semibold text-[#8B9D8B]/60 bg-[#8B9D8B]/5 px-3 py-1 rounded-full">
-              Slide 7
+              Slide 6
             </div>
             <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-6">
               Competitive Advantage
@@ -1104,14 +1101,11 @@ export default function Page() {
           {/* Slide 9: Go-To-Market Strategy */}
           <div className="bg-gradient-to-br from-white to-[#F5F5DC] rounded-[32px] p-10 sm:p-14 border border-[#8B9D8B]/20 overflow-hidden relative">
             <div className="absolute top-4 left-4 text-xs font-semibold text-[#8B9D8B]/60 bg-[#8B9D8B]/5 px-3 py-1 rounded-full">
-              Slide 8
+              Slide 7
             </div>
             <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-6">
-              Go-To-Market Strategy
+              Go-To-Market Strategy (12-Month Execution)
             </h2>
-            <p className="text-center text-[#666] mb-6 text-sm sm:text-base">
-              From "Zero" to "Scale": A 12-Month Execution Roadmap
-            </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
               <div className="bg-white rounded-2xl p-5 border border-[#8B9D8B]/20">
@@ -1233,9 +1227,9 @@ export default function Page() {
           {/* Slide 10: The Team */}
           <div className="bg-white rounded-[32px] p-10 sm:p-14 border border-[#8B9D8B]/20 overflow-hidden relative">
             <div className="absolute top-4 left-4 text-xs font-semibold text-[#8B9D8B]/60 bg-[#8B9D8B]/5 px-3 py-1 rounded-full">
-              Slide 9
+              Slide 8
             </div>
-            <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-8">
+            <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-6">
               The Team
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -1360,7 +1354,7 @@ export default function Page() {
           {/* Slide 11: Use of Funds */}
           <div className="bg-gradient-to-br from-white to-[#F5F5DC] rounded-[32px] p-10 sm:p-14 border border-[#8B9D8B]/20 overflow-hidden relative">
             <div className="absolute top-4 left-4 text-xs font-semibold text-[#8B9D8B]/60 bg-[#8B9D8B]/5 px-3 py-1 rounded-full">
-              Slide 10
+              Slide 9
             </div>
             <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-6">
               Use of Funds
@@ -1450,9 +1444,9 @@ export default function Page() {
           </div>
 
           {/* Slide 12: Milestones */}
-          <div className="bg-white rounded-[32px] p-10 sm:p-14 border border-[#8B9D8B]/20 min-h-[450px] relative">
+          <div className="bg-white rounded-[32px] p-10 sm:p-14 border border-[#8B9D8B]/20 min-h-[450px] overflow-hidden relative">
             <div className="absolute top-4 left-4 text-xs font-semibold text-[#8B9D8B]/60 bg-[#8B9D8B]/5 px-3 py-1 rounded-full">
-              Slide 11
+              Slide 10
             </div>
             <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-6">
               Post-Launch Key Milestones (18 Months)
@@ -1507,9 +1501,9 @@ export default function Page() {
           </div>
 
           {/* Slide 13: Vision */}
-          <div className="bg-gradient-to-br from-[#8B9D8B] to-[#6B8E6B] rounded-[32px] p-10 sm:p-14 min-h-[500px] flex flex-col justify-between border border-[#7A8C7A] overflow-hidden relative">
-            <div className="absolute top-4 left-4 text-xs font-semibold text-white/60 bg-white/10 px-3 py-1 rounded-full">
-              Slide 12
+          <div className="bg-gradient-to-br from-[#8B9D8B] to-[#6B8E6B] rounded-[32px] p-10 sm:p-16 min-h-[500px] flex flex-col justify-between border border-[#7A8C7A] overflow-hidden relative">
+            <div className="absolute top-4 left-4 text-xs font-semibold text-white/70 bg-white/10 px-3 py-1 rounded-full">
+              Slide 11
             </div>
             <div className="flex items-center gap-3 mb-8">
               <DoodleRocket className="w-12 h-12 text-[#F5F5DC]" />
