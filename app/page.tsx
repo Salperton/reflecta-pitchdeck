@@ -935,48 +935,51 @@ export default function Page() {
                   Year 1: Financial Roadmap
                 </h2>
 
-                <div className="space-y-1 mb-2">
+                <div className="space-y-4 mb-6">
                   {/* Month 1-3 */}
-                  <div className="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20">
-                    <div className="flex justify-between items-start mb-2">
-                      <div className="font-bold text-lg">Month 1-3: Build & Beta</div>
-                      <div className="text-sm font-semibold">$0 - $500</div>
+                  <div className="bg-white p-5 rounded-xl border-l-4 border-[#8B9D8B]">
+                    <div className="flex justify-between items-center mb-2">
+                      <h3 className="font-bold text-lg text-[#333]">Month 1-3: Build & Beta</h3>
+                      <div className="text-lg font-bold text-[#8B9D8B]">$0 - $500</div>
                     </div>
-                    <p className="text-sm text-white/80">Focus: Product Fit</p>
+                    <p className="text-sm text-[#666]">Focus: Product Fit</p>
                   </div>
 
                   {/* Month 4-6 */}
-                  <div className="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20">
-                    <div className="flex justify-between items-start mb-2">
-                      <div className="font-bold text-lg">Month 4-6: Paid Testing</div>
-                      <div className="text-sm font-semibold">$1k - $2k</div>
+                  <div className="bg-white p-5 rounded-xl border-l-4 border-[#8B9D8B]">
+                    <div className="flex justify-between items-center mb-2">
+                      <h3 className="font-bold text-lg text-[#333]">Month 4-6: Paid Testing</h3>
+                      <div className="text-lg font-bold text-[#8B9D8B]">$1k - $2k</div>
                     </div>
-                    <p className="text-sm text-white/80">Focus: CAC Calibration</p>
+                    <p className="text-sm text-[#666]">Focus: CAC Calibration</p>
                   </div>
 
                   {/* Month 12 Target */}
-                  <div className="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20">
-                    <div className="flex justify-between items-start mb-2">
-                      <div className="font-bold text-lg">Month 12 Target</div>
-                      <div className="text-sm font-semibold">$15,000 MRR ($180K ARR)</div>
+                  <div className="bg-white p-5 rounded-xl border-l-4 border-[#FF9B7A]">
+                    <div className="flex justify-between items-center mb-2">
+                      <h3 className="font-bold text-lg text-[#333]">Month 12 Target</h3>
+                      <div className="text-lg font-bold text-[#FF9B7A]">$15,000 MRR</div>
                     </div>
-                    <p className="text-sm text-white/80">Active Subs: ~1,000</p>
+                    <div className="flex justify-between text-sm">
+                      <span className="text-[#666]">($180K ARR)</span>
+                      <span className="text-[#666]">Active Subs: ~1,000</span>
+                    </div>
                   </div>
                 </div>
 
                 {/* Unit Economics */}
-                <div className="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20">
-                  <h3 className="font-bold mb-3 text-lg">Unit Economics Target</h3>
-                  <div className="grid grid-cols-2 gap-4 text-sm">
-                    <div>
-                      <div className="text-white/70 text-xs mb-1">CAC</div>
-                      <div className="font-bold text-lg">&lt; $45</div>
-                      <div className="text-white/60 text-xs">(165 AED)</div>
+                <div className="bg-gradient-to-r from-[#8B9D8B]/10 to-[#FF9B7A]/10 p-6 rounded-xl border border-[#8B9D8B]/20">
+                  <h3 className="font-bold text-lg mb-4 text-[#333]">Unit Economics Target</h3>
+                  <div className="grid grid-cols-2 gap-6">
+                    <div className="text-center">
+                      <div className="text-xs text-[#666] uppercase tracking-wide mb-1">Target CAC</div>
+                      <div className="text-3xl font-bold text-[#8B9D8B]">&lt; $45</div>
+                      <div className="text-xs text-[#666] mt-1">(165 AED)</div>
                     </div>
-                    <div>
-                      <div className="text-white/70 text-xs mb-1">LTV</div>
-                      <div className="font-bold text-lg">&gt; $540</div>
-                      <div className="text-white/60 text-xs">(1,980 AED)</div>
+                    <div className="text-center">
+                      <div className="text-xs text-[#666] uppercase tracking-wide mb-1">Target LTV</div>
+                      <div className="text-3xl font-bold text-[#FF9B7A]">&gt; $540</div>
+                      <div className="text-xs text-[#666] mt-1">(1,980 AED)</div>
                     </div>
                   </div>
                 </div>
