@@ -12,8 +12,8 @@ import {
   DoodleLock,
   DoodleCheckmark,
   DoodleLightning,
-  DoodleBaby,
-  DoodleHandshake,
+  DoodleBaby, // Added DoodleBaby import
+  DoodleHandshake, // Added DoodleHandshake import
   DoodleChat,
   DoodleDoctor,
   DoodleChart,
@@ -22,6 +22,7 @@ import {
   PhoneIcon,
   DoodlePeople, // Added DoodlePeople
   DoodleGear, // Added DoodleGear
+  DoodleMoney, // Added DoodleMoney import
 } from "@/components/doodle-icons"
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -847,7 +848,7 @@ export default function Page() {
                       {/* High Willingness to Pay */}
                       <div className="bg-white/90 rounded-lg p-4 border border-amber-200">
                         <h4 className="font-bold text-amber-800 mb-2 flex items-center gap-2">
-                          <span className="text-xl">💳</span>
+                          <DoodleMoney />
                           High Willingness to Pay
                         </h4>
                         <p className="text-sm leading-relaxed text-neutral-800">
@@ -860,7 +861,7 @@ export default function Page() {
                       {/* The Nanny Gap */}
                       <div className="bg-white/90 rounded-lg p-4 border border-amber-200">
                         <h4 className="font-bold text-amber-800 mb-2 flex items-center gap-2">
-                          <span className="text-xl">👶</span>
+                          <DoodleBaby />
                           The "Nanny Gap"
                         </h4>
                         <p className="text-sm leading-relaxed text-neutral-700">
@@ -873,7 +874,7 @@ export default function Page() {
                       {/* Trust Economy */}
                       <div className="bg-white/90 rounded-lg p-4 border border-amber-200">
                         <h4 className="font-bold text-amber-800 mb-2 flex items-center gap-2">
-                          <span className="text-xl">🤝</span>
+                          <DoodleHandshake />
                           Trust Economy
                         </h4>
                         <p className="text-sm leading-relaxed text-neutral-700">
