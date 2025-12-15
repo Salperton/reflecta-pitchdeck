@@ -924,6 +924,27 @@ export default function Page() {
                     <p className="text-xs text-[#FF6B6B] mt-1">5% of users • $1,800 LTV</p>
                   </div>
                 </div>
+
+                <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl font-bold mb-6 sm:text-2xl mt-8">
+                  B2B Revenue Streams
+                </h2>
+                <div className="space-y-4">
+                  <div className="border-l-4 border-[#FF9B7A] pl-4">
+                    <div className="font-bold text-lg">Corporate Wellness</div>
+                    <p className="text-sm text-[#666]">$8-12/employee/month</p>
+                    <p className="text-xs text-[#999] mt-1">Employee benefit packages</p>
+                  </div>
+                  <div className="border-l-4 border-[#8B9D8B] pl-4">
+                    <div className="font-bold text-lg">Healthcare Partnerships</div>
+                    <p className="text-sm text-[#666]">Revenue share model</p>
+                    <p className="text-xs text-[#999] mt-1">Clinic & insurer integrations</p>
+                  </div>
+                  <div className="border-l-4 border-[#6B8E6B] pl-4">
+                    <div className="font-bold text-lg">White Label</div>
+                    <p className="text-sm text-[#666]">$100K-500K/year</p>
+                    <p className="text-xs text-[#999] mt-1">Hospital & clinic licensing</p>
+                  </div>
+                </div>
               </div>
 
               {/* Slide 7: Year 1 Financial Roadmap */}
