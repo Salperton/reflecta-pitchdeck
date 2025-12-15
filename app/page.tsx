@@ -1117,7 +1117,7 @@ export default function Page() {
                   <li className="flex items-start gap-2">
                     <span className="text-[#FF9B7A] mt-0.5">•</span>
                     <span className="font-semibold">
-                      Goal: Validate CAC {"<"} $15 by combining Search Intent with Instagram visual trust
+                      Goal: Validate CAC {"<"} $45 by combining Search Intent with Instagram visual trust
                     </span>
                   </li>
                 </ul>
@@ -1151,7 +1151,7 @@ export default function Page() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#6B7D6B] mt-0.5">•</span>
-                    <span className="font-semibold">Goal: Reach 1,500+ subscribers and $16.5k MRR</span>
+                    <span className="font-semibold">Goal: Reach 1,000+ paid subscribers and $15K MRR</span>
                   </li>
                 </ul>
               </div>
@@ -1160,7 +1160,7 @@ export default function Page() {
             <div className="bg-gradient-to-r from-[#8B9D8B]/10 to-[#FF9B7A]/10 rounded-2xl p-4 border border-[#8B9D8B]/20">
               <div className="grid grid-cols-3 gap-4 text-center">
                 <div>
-                  <p className="text-2xl font-bold text-[#8B9D8B]">{"<"}$15</p>
+                  <p className="text-2xl font-bold text-[#8B9D8B]">{"<"}$45</p>
                   <p className="text-xs text-[#666]">Target CAC</p>
                 </div>
                 <div>
@@ -1168,7 +1168,7 @@ export default function Page() {
                   <p className="text-xs text-[#666]">LTV:CAC Ratio</p>
                 </div>
                 <div>
-                  <p className="text-2xl font-bold text-[#6B7D6B]">12mo</p>
+                  <p className="text-2xl font-bold text-[#6B7D6B]">18mo</p>
                   <p className="text-xs text-[#666]">To Profitability</p>
                 </div>
               </div>
