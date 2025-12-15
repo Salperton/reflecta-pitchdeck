@@ -222,7 +222,9 @@ export default function Page() {
                 <br />
                 Parenting Support
               </h1>
-              <p className="text-xl sm:text-2xl text-white/90 max-w-2xl">Confident Parenting, Backed by Science - Powered by AI</p>
+              <p className="text-xl sm:text-2xl text-white/90 max-w-2xl">
+                Confident Parenting, Backed by Science - Powered by AI
+              </p>
               <div className="bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-2xl max-w-2xl">
                 <p className="text-white text-sm sm:text-base">
                   Connecting parents to 500,000+ peer-reviewed studies through compassionate AI guidance
@@ -395,6 +397,12 @@ export default function Page() {
                   <h3 className="font-bold text-red-900">Generic AI (e.g., ChatGPT)</h3>
                 </div>
                 <div className="space-y-3">
+                  <div className="bg-white/60 p-3 rounded-lg border border-red-200">
+                    <p className="text-sm text-red-900 mb-1 font-semibold">Question:</p>
+                    <p className="text-xs text-red-800 italic">
+                      &quot;My child has a tantrum when I ask him to give me the ipad&quot;
+                    </p>
+                  </div>
                   <div className="bg-white/80 p-3 rounded-lg">
                     <p className="text-sm text-red-800 mb-2 font-semibold">Response:</p>
                     <p className="text-xs text-red-700">
@@ -419,6 +427,12 @@ export default function Page() {
                   <h3 className="font-bold text-[#1a1a1a]">Reflecta</h3>
                 </div>
                 <div className="space-y-3">
+                  <div className="bg-white/60 p-3 rounded-lg border border-[#8B9D8B]/30">
+                    <p className="text-sm text-[#1a1a1a] mb-1 font-semibold">Question:</p>
+                    <p className="text-xs text-[#333] italic">
+                      &quot;My child has a tantrum when I ask him to give me the ipad&quot;
+                    </p>
+                  </div>
                   <div className="bg-white/80 p-3 rounded-lg">
                     <p className="text-sm text-[#1a1a1a] mb-2 font-semibold">Response:</p>
                     <p className="text-xs text-[#333]">
