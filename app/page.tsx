@@ -1192,6 +1192,7 @@ export default function Page() {
                   <li>• Top 50 Health App (UAE)</li>
                   <li>• 500+ Active Users with 40% Retention</li>
                   <li>• 1st B2B Corporate Pilot Signed</li>
+                  <li>• $5K MRR (~300 paid subscribers)</li>
                 </ul>
               </div>
 
@@ -1199,13 +1200,14 @@ export default function Page() {
                 <div className="flex items-center gap-3 mb-3">
                   <span className="bg-[#6B8E6B] text-white text-sm font-bold px-3 py-1 rounded-full">Month 12</span>
                   <span className="font-[family-name:var(--font-space-grotesk)] text-xl font-bold">
-                    $25K MRR ($300k ARR)
+                    $15K MRR ($180K ARR)
                   </span>
                 </div>
                 <ul className="space-y-1.5 text-sm text-[#666]">
-                  <li>• 2,500+ Paid Subscribers (CAC stabilized &lt; $20)</li>
+                  <li>• 1,000 Paid Subscribers (CAC stabilized &lt; $45)</li>
                   <li>• KSA Launch Live (Khaleeji Dialect + Saudi Payment Gateway)</li>
                   <li>• 3 Major Influencer Ambassadors (Exclusive 1-Year Contracts)</li>
+                  <li>• LTV:CAC ratio validated at 12x</li>
                 </ul>
               </div>
 
@@ -1213,14 +1215,14 @@ export default function Page() {
                 <div className="flex items-center gap-3 mb-3">
                   <span className="bg-[#FF6B6B] text-white text-sm font-bold px-3 py-1 rounded-full">Month 18</span>
                   <span className="font-[family-name:var(--font-space-grotesk)] text-xl font-bold">
-                    $100K MRR ($1.2M ARR)
+                    $45K MRR ($540K ARR)
                   </span>
                 </div>
                 <ul className="space-y-1.5 text-sm text-[#666]">
-                  <li>• 10,000+ Paid Subscribers</li>
+                  <li>• 2,500 Paid Subscribers</li>
                   <li>• 3 B2B Enterprise Contracts Live (Employee Wellness Benefit)</li>
                   <li>
-                    • <strong>Series A Ready</strong> (Meeting the $1M ARR MENA Benchmark)
+                    • <strong>Series A Ready</strong> (Meeting MENA traction benchmarks)
                   </li>
                 </ul>
               </div>
