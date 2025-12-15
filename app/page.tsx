@@ -860,90 +860,29 @@ export default function Page() {
           {/* Slide 6: Business Model */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
             <div className="bg-white rounded-[32px] p-10 sm:p-14 border border-[#8B9D8B]/20 min-h-[450px]">
-              <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-3xl font-bold mb-8 text-center">
+              <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-3xl font-bold mb-6">
                 B2C Subscription Tiers
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-                {/* Tier 1: Free */}
-                <div className="border-2 border-neutral-200 rounded-2xl p-6 bg-white hover:shadow-lg transition-shadow">
-                  <div className="text-center mb-4">
-                    <div className="text-sm font-semibold text-neutral-500 uppercase tracking-wide mb-2">Basic</div>
-                    <div className="text-4xl font-bold text-neutral-900 mb-1">$0</div>
-                    <div className="text-sm text-neutral-500">Free Forever</div>
-                  </div>
-                  <ul className="space-y-3 text-sm">
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#8B9D8B] mt-0.5">✓</span>
-                      <span>5 Questions/Day</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#8B9D8B] mt-0.5">✓</span>
-                      <span>Basic Milestone Tracking</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#8B9D8B] mt-0.5">✓</span>
-                      <span>Acquisition Funnel</span>
-                    </li>
-                  </ul>
+              <div className="space-y-4">
+                <div className="border-l-4 border-[#999] pl-4">
+                  <div className="font-bold text-lg">Free Tier</div>
+                  <p className="text-sm text-[#666]">5 questions/day • Basic chat</p>
+                  <p className="text-xs text-[#999] mt-1">Acquisition funnel</p>
                 </div>
-
-                {/* Tier 2: Premium (Recommended) */}
-                <div className="border-2 border-[#8B9D8B] rounded-2xl p-6 bg-gradient-to-br from-[#F5F5DC] to-white relative shadow-lg scale-105">
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#8B9D8B] text-white text-xs font-bold px-4 py-1 rounded-full">
-                    RECOMMENDED
-                  </div>
-                  <div className="text-center mb-4">
-                    <div className="text-sm font-semibold text-[#8B9D8B] uppercase tracking-wide mb-2">
-                      Peace of Mind
-                    </div>
-                    <div className="text-4xl font-bold text-neutral-900 mb-1">$9.99</div>
-                    <div className="text-sm text-neutral-500">per month</div>
-                  </div>
-                  <ul className="space-y-3 text-sm">
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#8B9D8B] mt-0.5">✓</span>
-                      <span className="font-semibold">Unlimited Verified AI Chat</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#8B9D8B] mt-0.5">✓</span>
-                      <span>"Nanny Mode" (Translation to Tagalog/Hindi)</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#8B9D8B] mt-0.5">✓</span>
-                      <span>Advanced Assessments</span>
-                    </li>
-                  </ul>
-                  <p className="text-xs text-[#8B9D8B] mt-4 text-center font-semibold">
-                    70% of users • The Volume Driver
-                  </p>
+                <div className="border-l-4 border-[#8B9D8B] pl-4">
+                  <div className="font-bold text-lg">Premium - $15/mo</div>
+                  <p className="text-sm text-[#666]">Unlimited chat • All assessments</p>
+                  <p className="text-xs text-[#8B9D8B] mt-1">70% of users • $540 LTV</p>
                 </div>
-
-                {/* Tier 3: Family */}
-                <div className="border-2 border-neutral-200 rounded-2xl p-6 bg-white hover:shadow-lg transition-shadow">
-                  <div className="text-center mb-4">
-                    <div className="text-sm font-semibold text-neutral-500 uppercase tracking-wide mb-2">
-                      The Village
-                    </div>
-                    <div className="text-4xl font-bold text-neutral-900 mb-1">$24.99</div>
-                    <div className="text-sm text-neutral-500">per month</div>
-                  </div>
-                  <ul className="space-y-3 text-sm">
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#8B9D8B] mt-0.5">✓</span>
-                      <span>Multiple Child Profiles (Unlimited)</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#8B9D8B] mt-0.5">✓</span>
-                      <span>Deep Developmental Reports (PDF Export)</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#8B9D8B] mt-0.5">✓</span>
-                      <span>Priority Support</span>
-                    </li>
-                  </ul>
-                  <p className="text-xs text-[#6B8E6B] mt-4 text-center font-semibold">
-                    25% of users • The Value Driver
-                  </p>
+                <div className="border-l-4 border-[#6B8E6B] pl-4">
+                  <div className="font-bold text-lg">Family - $25/mo</div>
+                  <p className="text-sm text-[#666]">Multiple children • Clinician consults</p>
+                  <p className="text-xs text-[#6B8E6B] mt-1">25% of users • $900 LTV</p>
+                </div>
+                <div className="border-l-4 border-[#FF6B6B] pl-4">
+                  <div className="font-bold text-lg">Professional - $50/mo</div>
+                  <p className="text-sm text-[#666]">Client management • Analytics</p>
+                  <p className="text-xs text-[#FF6B6B] mt-1">5% of users • $1,800 LTV</p>
                 </div>
               </div>
             </div>
@@ -1092,57 +1031,7 @@ export default function Page() {
           </div>
 
           {/* Slide 8: Traction */}
-          <div className="bg-white rounded-[32px] p-10 sm:p-14 border border-[#8B9D8B]/20 min-h-[450px]">
-            <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-6">
-              Traction & Validation
-            </h2>
-            <p className="text-lg sm:text-xl text-neutral-600 mb-8">
-              Every parent deserves access to evidence-based knowledge, delivered with empathy, personalization, and
-              24/7 availability.
-            </p>
-
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
-              <div className="bg-white/80 backdrop-blur rounded-2xl p-6 border border-[#8B9D8B]/20">
-                <div className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-1">
-                  1M
-                </div>
-                <p className="text-xs sm:text-sm">Families Supported</p>
-              </div>
-              <div className="bg-white/80 backdrop-blur rounded-2xl p-6 border border-[#8B9D8B]/20">
-                <div className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-1">
-                  10K+
-                </div>
-                <p className="text-xs sm:text-sm">Clinicians</p>
-              </div>
-              <div className="bg-white/80 backdrop-blur rounded-2xl p-6 border border-[#8B9D8B]/20">
-                <div className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-1">
-                  15+
-                </div>
-                <p className="text-xs sm:text-sm">Global Markets</p>
-              </div>
-              <div className="bg-white/80 backdrop-blur rounded-2xl p-6 border border-[#8B9D8B]/20">
-                <div className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold text-[#8B9D8B] mb-1">
-                  50M+
-                </div>
-                <p className="text-xs sm:text-sm">Questions Answered</p>
-              </div>
-            </div>
-
-            <div className="mt-8 pt-6 border-t border-[#8B9D8B]/20">
-              <p className="text-xs text-neutral-500">
-                Sources: Grand View Research (2024), Roots Analysis (2024), Fortune Business Insights (2024), UN World
-                Population Prospects (2024), Mordor Intelligence (2024), UnivDatos Market Insights (2022), MediTech
-                Insights, McKinsey & Company, IMARC Group (2024), World Economic Forum (2024)
-              </p>
-            </div>
-
-            <div className="mt-8 bg-[#8B9D8B]/10 p-4 rounded-xl border border-[#8B9D8B]/20">
-              <p className="text-sm text-center">
-                We are not just building a parenting app , we are creating a new category of AI-powered, evidence-based
-                healthcare support that could expand to eldercare, chronic disease management, and mental health.
-              </p>
-            </div>
-          </div>
+          
 
           {/* Slide 11: GTM Strategy */}
           <div className="bg-white rounded-[32px] p-10 sm:p-14 border border-[#8B9D8B]/20 min-h-[450px]">
