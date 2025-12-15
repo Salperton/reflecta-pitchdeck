@@ -46,7 +46,7 @@ export default function LoginPage() {
         <div className="bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl p-8">
           {/* Logo */}
           <div className="flex justify-center mb-8">
-            <div className="rounded-2xl p-4 shadow-lg bg-white">
+            <div className="rounded-2xl p-4 shadow-lg bg-[rgba(251,242,235,1)]">
               <Image
                 src="/images/reflecta-logo.png"
                 alt="Reflecta Logo"
@@ -104,15 +104,7 @@ export default function LoginPage() {
             </button>
           </form>
 
-          <div className="mt-6 p-4 bg-[#F5F5DC]/50 rounded-xl">
-            <p className="text-xs text-[#5A6A5A] text-center">Demo Credentials</p>
-            <p className="text-sm text-[#2C3E2C] text-center font-mono mt-1">
-              Username: <strong>conclave</strong>
-            </p>
-            <p className="text-sm text-[#2C3E2C] text-center font-mono">
-              Password: <strong>inest881</strong>
-            </p>
-          </div>
+          
         </div>
       </div>
     </div>
