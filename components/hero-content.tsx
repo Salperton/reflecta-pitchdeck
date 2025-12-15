@@ -35,7 +35,7 @@ export default function HeroContent() {
               Log In
             </button>
           </Link>
-          <Link href="/pitchdeck">
+          <Link href="https://www.smart-bridge.co/login" target="_blank" rel="noopener noreferrer">
             <button className="px-8 py-3 rounded-full bg-white text-black font-normal text-xs transition-all duration-200 hover:bg-white/90 cursor-pointer">
               Join Waitlist
             </button>
