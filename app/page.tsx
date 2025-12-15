@@ -1390,37 +1390,44 @@ export default function Page() {
           </div>
 
           {/* Slide 13: Vision */}
-          <div className="bg-gradient-to-br from-[#8B9D8B] to-[#6B8E6B] rounded-[32px] p-8 sm:p-12 min-h-[450px] flex flex-col justify-center">
-            <div className="flex items-center gap-3 mb-6">
+          <div className="bg-gradient-to-br from-[#8B9D8B] to-[#6B8E6B] rounded-[32px] p-8 sm:p-12 min-h-[500px] border border-[#7A8C7A] flex flex-col">
+            <div className="flex items-center gap-4 mb-6">
               <BrainIcon className="w-12 h-12 text-[#F5F5DC]" />
               <h2 className="font-[family-name:var(--font-space-grotesk)] text-4xl sm:text-5xl font-bold text-white">
                 Our Vision
               </h2>
             </div>
             <p className="text-lg sm:text-xl text-white/90 mb-8 leading-relaxed">
-              By 2030, we envision Reflecta as the leading mental wellness platform in the MENA region, empowering
-              millions to achieve lasting emotional resilience through AI-powered personalized care.
+              By 2030, Reflecta will be the Standard Operating System for Parenting in the GCC and beyond. We are
+              building the bridge between clinical pediatric care and daily family life—starting in the UAE, dominating
+              the MENA region, and exporting our &apos;Safety Layer&apos; technology to the world.
             </p>
+            <h3 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-3xl font-bold text-white mb-6">
+              The 2030 Targets (The &quot;North Star&quot;)
+            </h3>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
-                <div className="text-3xl font-bold text-white mb-2">5M+</div>
-                <div className="text-sm text-white/80">Active Users</div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                <div className="text-sm text-white/70 mb-2 uppercase tracking-wide font-semibold">Impact</div>
+                <div className="text-3xl sm:text-4xl font-bold text-white mb-2">1M+ Families</div>
+                <div className="text-sm text-white/80">Supported Daily (GCC & Beyond)</div>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
-                <div className="text-3xl font-bold text-white mb-2">$50M</div>
-                <div className="text-sm text-white/80">Annual Revenue</div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                <div className="text-sm text-white/70 mb-2 uppercase tracking-wide font-semibold">Financial</div>
+                <div className="text-3xl sm:text-4xl font-bold text-white mb-2">$25M ARR</div>
+                <div className="text-sm text-white/80">Annual Recurring Revenue</div>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
-                <div className="text-3xl font-bold text-white mb-2">15+</div>
-                <div className="text-sm text-white/80">Markets</div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                <div className="text-sm text-white/70 mb-2 uppercase tracking-wide font-semibold">Reach</div>
+                <div className="text-3xl sm:text-4xl font-bold text-white mb-2">Global Scale</div>
+                <div className="text-sm text-white/80">MENA Dominance + EU/Asia Expansion</div>
               </div>
             </div>
-            <div className="text-center">
+            <div className="text-center mt-auto">
               <h3 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-3xl font-bold text-white mb-4">
-                Let&apos;s Build This Together
+                Let&apos;s Define the Future of Family Health.
               </h3>
               <p className="text-lg text-white/90 mb-6">
-                Join us in transforming mental wellness across the MENA region
+                Join us in building the first clinically-verified parenting AI.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <div className="flex items-center gap-2 text-white">
