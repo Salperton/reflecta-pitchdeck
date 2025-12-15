@@ -479,7 +479,7 @@ export default function Page() {
                   <p className="text-sm sm:text-base text-[#666] leading-relaxed">
                     We use a RAG engine to cross-reference every answer against{" "}
                     <span className="font-bold text-[#8B9D8B]">500,000+ peer-reviewed studies</span>, with{" "}
-                    <span className="font-bold text-[#8B9D8B]">100+ hand-curated papers</span> scored by our proprietary
+                    <span className="font-bold text-[#8B9D8B]">1000+ hand-curated papers</span> scored by our proprietary
                     quality algorithm. No guesswork. No generic advice. Just evidence-based guidance you can trust.
                   </p>
                 </div>
