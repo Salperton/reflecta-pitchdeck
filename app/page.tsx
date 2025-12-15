@@ -982,7 +982,7 @@ export default function Page() {
             </div>
           </div>
 
-          {/* Slide 7: Competitive Advantage */}
+          {/* Slide 8: Competitive Advantage */}
           <div className="bg-white rounded-[32px] p-10 sm:p-14 border border-[#8B9D8B]/20 overflow-hidden relative">
             <div className="absolute top-4 left-4 text-xs font-semibold text-[#8B9D8B]/60 bg-[#8B9D8B]/5 px-3 py-1 rounded-full">
               Slide 7
@@ -1212,10 +1212,69 @@ export default function Page() {
             <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-8">
               The Team
             </h2>
-            {/* Placeholder for Team Section - actual content would go here */}
-            <p className="text-center text-[#666] mt-10">
-              Details about the founding team and key advisors will be presented here.
-            </p>
+            {/* CHANGE: Added complete team member profiles with images and detailed backgrounds */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Ivan */}
+              <div className="flex flex-col items-center text-center">
+                <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-[#8B9D8B]/20">
+                  <img src="/images/ivan-20doncic.png" alt="Ivan" className="w-full h-full object-cover" />
+                </div>
+                <h3 className="font-[family-name:var(--font-space-grotesk)] text-xl font-bold mb-1">
+                  Ivan [Last Name]
+                </h3>
+                <p className="text-sm font-semibold text-[#8B9D8B] mb-3">CTO & Founder</p>
+                <p className="text-sm text-[#666] leading-relaxed mb-3">
+                  15 years in digital analytics and audience behaviour. Formerly worked on campaigns for Mubadala
+                  Healthcare, World Economic Forum, ADQ, Hub72, and others. Currently managing Emirates Global Aluminium
+                  (EGA) digital platforms globally. Deep expertise in AI platform integrations, healthcare technology,
+                  and MENA market dynamics.
+                </p>
+                <p className="text-xs font-semibold text-[#8B9D8B]">
+                  Focus: Strategy & Development, Product Vision, Investor Relations
+                </p>
+              </div>
+
+              {/* Marko */}
+              <div className="flex flex-col items-center text-center">
+                <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-[#8B9D8B]/20">
+                  <img
+                    src="/images/marko-20cvijic-20grey-20large.jpeg"
+                    alt="Marko Cvijic"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="font-[family-name:var(--font-space-grotesk)] text-xl font-bold mb-1">Marko Cvijic</h3>
+                <p className="text-sm font-semibold text-[#8B9D8B] mb-3">Co-CTO & Head of Digital Acquisition</p>
+                <p className="text-sm text-[#666] leading-relaxed mb-3">
+                  18 years in digital campaign management and audience acquisition. Google-certified senior ads expert.
+                  Skilled in RAG systems, API integrations, and scalable web applications.
+                </p>
+                <p className="text-xs font-semibold text-[#8B9D8B]">
+                  Focus: Audience Acquisition, Technology, Platform Architecture
+                </p>
+              </div>
+
+              {/* John */}
+              <div className="flex flex-col items-center text-center">
+                <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-[#8B9D8B]/20">
+                  <img
+                    src="/images/john-20lochrie-2c-20grey-20large.jpeg"
+                    alt="John Lochrie"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="font-[family-name:var(--font-space-grotesk)] text-xl font-bold mb-1">John Lochrie</h3>
+                <p className="text-sm font-semibold text-[#8B9D8B] mb-3">CFO & Head of Growth</p>
+                <p className="text-sm text-[#666] leading-relaxed mb-3">
+                  Ex-Director positions at Barclays Private Wealth Geneva, Switzerland, First Abu Dhabi Bank, and
+                  Citibank. Deep understanding of GCC financial landscape, corporate partnerships, and scaling
+                  operations in regulated industries.
+                </p>
+                <p className="text-xs font-semibold text-[#8B9D8B]">
+                  Focus: Finance, B2B Partnerships, Operational Scale
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Slide 11: Use of Funds */}
