@@ -30,7 +30,7 @@ export default function HeroContent() {
 
         {/* Buttons */}
         <div className="flex items-center gap-4 flex-wrap">
-          <Link href="https://pitchdeck.reflectaa.com" target="_blank" rel="noopener noreferrer">
+          <Link href="https://www.smart-bridge.co/login" target="_blank" rel="noopener noreferrer">
             <button className="px-8 py-3 rounded-full bg-transparent border border-white/30 text-white font-normal text-xs transition-all duration-200 hover:bg-white/10 hover:border-white/50 cursor-pointer">
               Log In
             </button>
