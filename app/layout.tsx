@@ -27,9 +27,13 @@ const instrumentSerif = Instrument_Serif({
 })
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
+  title: "Reflecta",
+  description: "Confident Parenting, Backed by Science",
   generator: "v0.app",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.jpg",
+  },
 }
 
 export default function RootLayout({
