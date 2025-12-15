@@ -356,13 +356,3 @@ export const DoodlePhone = () => (
     <path d="M14 7H18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
   </svg>
 )
-
-export const DoodleLibrary = () => (
-  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="6" y="8" width="5" height="18" rx="1" stroke="currentColor" strokeWidth="2" />
-    <rect x="13" y="6" width="5" height="20" rx="1" stroke="currentColor" strokeWidth="2" />
-    <rect x="20" y="10" width="5" height="16" rx="1" stroke="currentColor" strokeWidth="2" />
-    <path d="M4 26H28" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-    <path d="M8 12V22M15 10V22M22 14V22" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-  </svg>
-)

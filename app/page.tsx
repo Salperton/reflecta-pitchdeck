@@ -26,7 +26,6 @@ import {
   DoodleCamera, // Added DoodleCamera import
   DoodlePhone, // Added DoodlePhone import
   DoodleTarget, // Added DoodleTarget import
-  DoodleLibrary, // Added DoodleLibrary import
 } from "@/components/doodle-icons"
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -414,7 +413,7 @@ export default function Page() {
                   <div className="flex flex-wrap gap-2 text-xs">
                     <span className="bg-red-100 text-red-700 px-2 py-1 rounded-full">❌ No citations</span>
                     <span className="bg-red-100 text-red-700 px-2 py-1 rounded-full">❌ Generic advice</span>
-                    <span className="bg-red-100 text-red-700 px-2 py-1 rounded-full">⚠️ Potentially unsafe</span>
+                    <span className="bg-red-100 text-red-700 px-2 py-1 rounded-full">⚠️ No recall in memory for follow-up    </span>
                   </div>
                 </div>
               </div>
@@ -451,13 +450,13 @@ export default function Page() {
                     <span className="bg-[#8B9D8B]/20 text-[#1a1a1a] px-2 py-1 rounded-full">
                       ✅ Age-specific guidance
                     </span>
-                    <span className="bg-[#8B9D8B]/20 text-[#1a1a1a] px-2 py-1 rounded-full">✅ Medically safe</span>
+                    <span className="bg-[#8B9D8B]/20 text-[#1a1a1a] px-2 py-1 rounded-full">✅ Stored in memory for follow-up    </span>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
               <div className="bg-[#8B9D8B]/10 p-4 rounded-2xl border border-[#8B9D8B]/20">
                 <div className="text-[#8B9D8B] mb-2">
                   <DoodleChat />
@@ -478,13 +477,6 @@ export default function Page() {
                 </div>
                 <h3 className="font-bold mb-2">Structured Support</h3>
                 <p className="text-sm text-[#666]">Assessments & guided plans</p>
-              </div>
-              <div className="bg-[#8B9D8B]/10 p-4 rounded-2xl border border-[#8B9D8B]/20">
-                <div className="text-[#8B9D8B] mb-2">
-                  <DoodleLibrary />
-                </div>
-                <h3 className="font-bold mb-2">Research Library</h3>
-                <p className="text-sm text-[#666]">500K+ peer-reviewed studies</p>
               </div>
             </div>
 
