@@ -1264,7 +1264,7 @@ export default function Page() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#8B9D8B] mt-0.5 flex-shrink-0">•</span>
-                    <span>Campaigns for Mubadala Healthcare, World Economic Forum, ADQ, Hub72</span>
+                    <span>Campaigns for Mubadala Healthcare, World Economic Forum, ADQ, Hub72, Pininfarina. </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#8B9D8B] mt-0.5 flex-shrink-0">•</span>
@@ -1306,11 +1306,11 @@ export default function Page() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#8B9D8B] mt-0.5 flex-shrink-0">•</span>
-                    <span>Google-certified senior ads expert</span>
+                    <span>Managed  digital campaigns for World Economic Forum, ADQ, EGA, World Bank, Amazon, Microsoft among other.</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#8B9D8B] mt-0.5 flex-shrink-0">•</span>
-                    <span>Skilled in RAG systems, API integrations, and scalable web applications</span>
+                    <span>Skilled in RAG systems, API integrations, and scalable web applications. Google-certified senior ads expert</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#8B9D8B] mt-0.5 flex-shrink-0">•</span>
