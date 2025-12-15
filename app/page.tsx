@@ -1285,10 +1285,86 @@ export default function Page() {
             <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-6">
               Use of Funds
             </h2>
-            {/* Placeholder for Use of Funds Section - actual content would go here */}
-            <p className="text-center text-[#666] mt-10">
-              Breakdown of how the investment will be allocated (e.g., Product Development, Marketing, Operations).
-            </p>
+            <div className="space-y-6">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold text-[#8B9D8B] mb-2">Raising: $300,000 Pre-Seed</h3>
+                <p className="text-[#666]">18-month runway to Series A milestones</p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Team & Talent */}
+                <div className="bg-white rounded-xl p-6 border border-[#8B9D8B]/20 shadow-sm">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 rounded-full bg-[#8B9D8B]/10 flex items-center justify-center">
+                      <span className="text-2xl">👥</span>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-lg text-[#333]">Team & Talent</h4>
+                      <p className="text-2xl font-bold text-[#8B9D8B]">40% — $120K</p>
+                    </div>
+                  </div>
+                  <ul className="space-y-2 text-sm text-[#666]">
+                    <li>• Head of Growth Marketing (UAE digital expert)</li>
+                    <li>• Senior Engineer (contract)</li>
+                    <li className="italic text-xs">*Variable based on hiring timeline*</li>
+                  </ul>
+                </div>
+
+                {/* Marketing & User Acquisition */}
+                <div className="bg-white rounded-xl p-6 border border-[#8B9D8B]/20 shadow-sm">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 rounded-full bg-[#FF9B7A]/10 flex items-center justify-center">
+                      <span className="text-2xl">📱</span>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-lg text-[#333]">Marketing & User Acquisition</h4>
+                      <p className="text-2xl font-bold text-[#FF9B7A]">35% — $105K</p>
+                    </div>
+                  </div>
+                  <ul className="space-y-2 text-sm text-[#666]">
+                    <li>• Paid ads (Google, Instagram, Snapchat): $60K</li>
+                    <li>• Content creation (SEO articles, video): $25K</li>
+                    <li>• Influencer partnerships: $15K</li>
+                    <li className="italic text-xs">*Variable based on CAC performance*</li>
+                  </ul>
+                </div>
+
+                {/* Product Development */}
+                <div className="bg-white rounded-xl p-6 border border-[#8B9D8B]/20 shadow-sm">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 rounded-full bg-[#8B9D8B]/10 flex items-center justify-center">
+                      <span className="text-2xl">💻</span>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-lg text-[#333]">Product Development</h4>
+                      <p className="text-2xl font-bold text-[#8B9D8B]">15% — $45K</p>
+                    </div>
+                  </div>
+                  <ul className="space-y-2 text-sm text-[#666]">
+                    <li>• Mobile app MVP (iOS + Android): $30K</li>
+                    <li>• Feature enhancements: $10K</li>
+                    <li>• Research database expansion: $5K</li>
+                  </ul>
+                </div>
+
+                {/* Operations */}
+                <div className="bg-white rounded-xl p-6 border border-[#8B9D8B]/20 shadow-sm">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 rounded-full bg-[#FF9B7A]/10 flex items-center justify-center">
+                      <span className="text-2xl">⚙️</span>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-lg text-[#333]">Operations</h4>
+                      <p className="text-2xl font-bold text-[#FF9B7A]">10% — $30K</p>
+                    </div>
+                  </div>
+                  <ul className="space-y-2 text-sm text-[#666]">
+                    <li>• Legal & compliance: $15K</li>
+                    <li>• Infrastructure & tools: $15K</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Slide 12: Milestones */}
