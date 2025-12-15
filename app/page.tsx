@@ -1368,7 +1368,7 @@ export default function Page() {
             <div className="space-y-6">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-[#8B9D8B] mb-2">Raising: $300,000 Pre-Seed</h3>
-                <p className="text-[#666]">18-month runway to Series A milestones</p>
+                <p className="text-[#666]">{"18-month runway to Series A milestones"}</p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
