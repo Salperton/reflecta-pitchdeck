@@ -17,7 +17,7 @@ import {
   DoodleChat,
   DoodleDoctor,
   DoodleChart,
-  BrainIcon,
+  DoodleRocket, // Added DoodleRocket import for Vision slide
   MailIcon,
   PhoneIcon,
 } from "@/components/doodle-icons"
@@ -1392,7 +1392,7 @@ export default function Page() {
           {/* Slide 13: Vision */}
           <div className="bg-gradient-to-br from-[#8B9D8B] to-[#6B8E6B] rounded-[32px] p-8 sm:p-12 min-h-[500px] border border-[#7A8C7A] flex flex-col">
             <div className="flex items-center gap-4 mb-6">
-              <BrainIcon className="w-12 h-12 text-[#F5F5DC]" />
+              <DoodleRocket className="w-12 h-12 text-[#F5F5DC]" />
               <h2 className="font-[family-name:var(--font-space-grotesk)] text-4xl sm:text-5xl font-bold text-white">
                 Our Vision
               </h2>
