@@ -9,25 +9,12 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "2024 UI Wrapped - 1UI.dev",
-  description: "Your year wrapped - See your 2024 UI design and development stats",
+  title: "Reflecta",
+  description: "Confident Parenting, Backed by Science - Powered by AI",
   generator: "v0.app",
   icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
 }
 
