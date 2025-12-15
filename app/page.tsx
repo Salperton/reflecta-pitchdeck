@@ -1367,7 +1367,9 @@ export default function Page() {
             </h2>
             <div className="space-y-6">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-[#8B9D8B] mb-2">Raising: $300,000 Pre-Seed</h3>
+                <h3 className="text-2xl font-bold text-[#8B9D8B] mb-2">
+                  Raising: $300,000 Pre-Seed at $3M pre-money valuation (10% equity)
+                </h3>
                 <p className="text-[#666]">{"18-month runway to Series A milestones"}</p>
               </div>
 
