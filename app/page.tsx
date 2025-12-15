@@ -1222,9 +1222,7 @@ export default function Page() {
                     <img src="/images/ivan-20doncic.png" alt="Ivan" className="w-full h-full object-cover" />
                   </div>
                   <div>
-                    <h3 className="font-[family-name:var(--font-space-grotesk)] text-lg font-bold mb-1">
-                      Ivan Doncic
-                    </h3>
+                    <h3 className="font-[family-name:var(--font-space-grotesk)] text-lg font-bold mb-1">Ivan Doncic</h3>
                     <p className="text-sm font-semibold text-[#8B9D8B]">CTO & Founder</p>
                   </div>
                 </div>
@@ -1267,8 +1265,7 @@ export default function Page() {
                     <h3 className="font-[family-name:var(--font-space-grotesk)] text-lg font-bold mb-1">
                       Marko Cvijic
                     </h3>
-                    <p className="text-sm font-semibold text-[#8B9D8B]">Co-CTO &amp;       
-Head of Digital Acquisition</p>
+                    <p className="text-sm font-semibold text-[#8B9D8B]">Co-CTO & Head of Digital Acquisition</p>
                   </div>
                 </div>
                 <ul className="space-y-2 text-xs text-[#666] mb-3">
@@ -1283,6 +1280,10 @@ Head of Digital Acquisition</p>
                   <li className="flex items-start gap-2">
                     <span className="text-[#8B9D8B] mt-0.5 flex-shrink-0">•</span>
                     <span>Skilled in RAG systems, API integrations, and scalable web applications</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#8B9D8B] mt-0.5 flex-shrink-0">•</span>
+                    <span>Scaled growth systems across 10+ countries with more than 220M USD in Ad Spend</span>
                   </li>
                 </ul>
                 <p className="text-xs font-semibold text-[#8B9D8B] bg-[#8B9D8B]/10 px-3 py-2 rounded-lg">
@@ -1304,8 +1305,12 @@ Head of Digital Acquisition</p>
                     <h3 className="font-[family-name:var(--font-space-grotesk)] text-lg font-bold mb-1">
                       John Lochrie
                     </h3>
-                    <p className="text-sm fontCFO &amp; 
-Head of GrowthD8B]">CFO & Head of Growth</p>
+                    <p
+                      className="text-sm fontCFO &amp; 
+Head of GrowthD8B]"
+                    >
+                      CFO & Head of Growth
+                    </p>
                   </div>
                 </div>
                 <ul className="space-y-2 text-xs text-[#666] mb-3">
