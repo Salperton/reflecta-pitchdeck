@@ -406,8 +406,7 @@ export default function Page() {
                   <div className="bg-white/80 p-3 rounded-lg">
                     <p className="text-sm text-red-800 mb-2 font-semibold">Response:</p>
                     <p className="text-xs text-red-700">
-                      &quot;Gotcha, here is a 5 step approach you can take. First tell your child you understand, then
-                      calm them down&quot;
+                      "I’m so sorry you’re going through this. Here is a simple 5-step approach that might help: First, validate their feelings so they feel heard, then help them settle their emotions. Ensure they are in a safe space, and once they've calmed down, gently explain the situation to them. Give that a try and let me know how it goes!" 
                     </p>
                   </div>
                   <div className="flex flex-wrap gap-2 text-xs">
