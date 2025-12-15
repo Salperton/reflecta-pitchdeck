@@ -1214,65 +1214,117 @@ export default function Page() {
             <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-8">
               The Team
             </h2>
-            {/* CHANGE: Added complete team member profiles with images and detailed backgrounds */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Ivan */}
-              <div className="flex flex-col items-center text-center">
-                <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-[#8B9D8B]/20">
-                  <img src="/images/ivan-20doncic.png" alt="Ivan" className="w-full h-full object-cover" />
+              <div className="bg-gradient-to-br from-white to-[#F5F5DC] rounded-2xl p-5 border border-[#8B9D8B]/20">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0 border-2 border-[#8B9D8B]/20">
+                    <img src="/images/ivan-20doncic.png" alt="Ivan" className="w-full h-full object-cover" />
+                  </div>
+                  <div>
+                    <h3 className="font-[family-name:var(--font-space-grotesk)] text-lg font-bold mb-1">
+                      Ivan [Last Name]
+                    </h3>
+                    <p className="text-sm font-semibold text-[#8B9D8B]">CTO & Founder</p>
+                  </div>
                 </div>
-                <h3 className="font-[family-name:var(--font-space-grotesk)] text-xl font-bold mb-1">
-                  Ivan [Last Name]
-                </h3>
-                <p className="text-sm font-semibold text-[#8B9D8B] mb-3">CTO & Founder</p>
-                <p className="text-sm text-[#666] leading-relaxed mb-3">
-                  15 years in digital analytics and audience behaviour. Formerly worked on campaigns for Mubadala
-                  Healthcare, World Economic Forum, ADQ, Hub72, and others. Currently managing Emirates Global Aluminium
-                  (EGA) digital platforms globally. Deep expertise in AI platform integrations, healthcare technology,
-                  and MENA market dynamics.
-                </p>
-                <p className="text-xs font-semibold text-[#8B9D8B]">
+                <ul className="space-y-2 text-xs text-[#666] mb-3">
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#8B9D8B] mt-0.5 flex-shrink-0">•</span>
+                    <span>15 years in digital analytics and audience behaviour</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#8B9D8B] mt-0.5 flex-shrink-0">•</span>
+                    <span>Campaigns for Mubadala Healthcare, World Economic Forum, ADQ, Hub72</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#8B9D8B] mt-0.5 flex-shrink-0">•</span>
+                    <span>Managing Emirates Global Aluminium (EGA) digital platforms globally</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#8B9D8B] mt-0.5 flex-shrink-0">•</span>
+                    <span>
+                      Deep expertise in AI platform integrations, healthcare technology, and MENA market dynamics
+                    </span>
+                  </li>
+                </ul>
+                <p className="text-xs font-semibold text-[#8B9D8B] bg-[#8B9D8B]/10 px-3 py-2 rounded-lg">
                   Focus: Strategy & Development, Product Vision, Investor Relations
                 </p>
               </div>
 
               {/* Marko */}
-              <div className="flex flex-col items-center text-center">
-                <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-[#8B9D8B]/20">
-                  <img
-                    src="/images/marko-20cvijic-20grey-20large.jpeg"
-                    alt="Marko Cvijic"
-                    className="w-full h-full object-cover"
-                  />
+              <div className="bg-gradient-to-br from-white to-[#F5F5DC] rounded-2xl p-5 border border-[#8B9D8B]/20">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0 border-2 border-[#8B9D8B]/20">
+                    <img
+                      src="/images/marko-20cvijic-20grey-20large.jpeg"
+                      alt="Marko Cvijic"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="font-[family-name:var(--font-space-grotesk)] text-lg font-bold mb-1">
+                      Marko Cvijic
+                    </h3>
+                    <p className="text-sm font-semibold text-[#8B9D8B]">Co-CTO & Head of Digital Acquisition</p>
+                  </div>
                 </div>
-                <h3 className="font-[family-name:var(--font-space-grotesk)] text-xl font-bold mb-1">Marko Cvijic</h3>
-                <p className="text-sm font-semibold text-[#8B9D8B] mb-3">Co-CTO & Head of Digital Acquisition</p>
-                <p className="text-sm text-[#666] leading-relaxed mb-3">
-                  18 years in digital campaign management and audience acquisition. Google-certified senior ads expert.
-                  Skilled in RAG systems, API integrations, and scalable web applications.
-                </p>
-                <p className="text-xs font-semibold text-[#8B9D8B]">
+                <ul className="space-y-2 text-xs text-[#666] mb-3">
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#8B9D8B] mt-0.5 flex-shrink-0">•</span>
+                    <span>18 years in digital campaign management and audience acquisition</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#8B9D8B] mt-0.5 flex-shrink-0">•</span>
+                    <span>Google-certified senior ads expert</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#8B9D8B] mt-0.5 flex-shrink-0">•</span>
+                    <span>Skilled in RAG systems, API integrations, and scalable web applications</span>
+                  </li>
+                </ul>
+                <p className="text-xs font-semibold text-[#8B9D8B] bg-[#8B9D8B]/10 px-3 py-2 rounded-lg">
                   Focus: Audience Acquisition, Technology, Platform Architecture
                 </p>
               </div>
 
               {/* John */}
-              <div className="flex flex-col items-center text-center">
-                <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-[#8B9D8B]/20">
-                  <img
-                    src="/images/john-20lochrie-2c-20grey-20large.jpeg"
-                    alt="John Lochrie"
-                    className="w-full h-full object-cover"
-                  />
+              <div className="bg-gradient-to-br from-white to-[#F5F5DC] rounded-2xl p-5 border border-[#8B9D8B]/20">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0 border-2 border-[#8B9D8B]/20">
+                    <img
+                      src="/images/john-20lochrie-2c-20grey-20large.jpeg"
+                      alt="John Lochrie"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="font-[family-name:var(--font-space-grotesk)] text-lg font-bold mb-1">
+                      John Lochrie
+                    </h3>
+                    <p className="text-sm font-semibold text-[#8B9D8B]">CFO & Head of Growth</p>
+                  </div>
                 </div>
-                <h3 className="font-[family-name:var(--font-space-grotesk)] text-xl font-bold mb-1">John Lochrie</h3>
-                <p className="text-sm font-semibold text-[#8B9D8B] mb-3">CFO & Head of Growth</p>
-                <p className="text-sm text-[#666] leading-relaxed mb-3">
-                  Ex-Director positions at Barclays Private Wealth Geneva, Switzerland, First Abu Dhabi Bank, and
-                  Citibank. Deep understanding of GCC financial landscape, corporate partnerships, and scaling
-                  operations in regulated industries.
-                </p>
-                <p className="text-xs font-semibold text-[#8B9D8B]">
+                <ul className="space-y-2 text-xs text-[#666] mb-3">
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#8B9D8B] mt-0.5 flex-shrink-0">•</span>
+                    <span>Ex-Director at Barclays Private Wealth Geneva, Switzerland</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#8B9D8B] mt-0.5 flex-shrink-0">•</span>
+                    <span>Former positions at First Abu Dhabi Bank and Citibank</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#8B9D8B] mt-0.5 flex-shrink-0">•</span>
+                    <span>Deep understanding of GCC financial landscape and corporate partnerships</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#8B9D8B] mt-0.5 flex-shrink-0">•</span>
+                    <span>Expertise in scaling operations in regulated industries</span>
+                  </li>
+                </ul>
+                <p className="text-xs font-semibold text-[#8B9D8B] bg-[#8B9D8B]/10 px-3 py-2 rounded-lg">
                   Focus: Finance, B2B Partnerships, Operational Scale
                 </p>
               </div>
