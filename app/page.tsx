@@ -26,6 +26,7 @@ import {
   DoodleCamera, // Added DoodleCamera import
   DoodlePhone, // Added DoodlePhone import
   DoodleTarget, // Added DoodleTarget import
+  DoodleLibrary, // Added DoodleLibrary import
 } from "@/components/doodle-icons"
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -456,7 +457,7 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 mb-8">
               <div className="bg-[#8B9D8B]/10 p-4 rounded-2xl border border-[#8B9D8B]/20">
                 <div className="text-[#8B9D8B] mb-2">
                   <DoodleChat />
@@ -477,6 +478,13 @@ export default function Page() {
                 </div>
                 <h3 className="font-bold mb-2">Structured Support</h3>
                 <p className="text-sm text-[#666]">Assessments & guided plans</p>
+              </div>
+              <div className="bg-[#8B9D8B]/10 p-4 rounded-2xl border border-[#8B9D8B]/20">
+                <div className="text-[#8B9D8B] mb-2">
+                  <DoodleLibrary />
+                </div>
+                <h3 className="font-bold mb-2">Research Library</h3>
+                <p className="text-sm text-[#666]">500K+ peer-reviewed studies</p>
               </div>
             </div>
 
