@@ -20,6 +20,8 @@ import {
   DoodleRocket, // Added DoodleRocket import for Vision slide
   MailIcon,
   PhoneIcon,
+  DoodlePeople, // Added DoodlePeople
+  DoodleGear, // Added DoodleGear
 } from "@/components/doodle-icons"
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -1295,8 +1297,8 @@ export default function Page() {
                 {/* Team & Talent */}
                 <div className="bg-white rounded-xl p-6 border border-[#8B9D8B]/20 shadow-sm">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-[#8B9D8B]/10 flex items-center justify-center">
-                      <span className="text-2xl">👥</span>
+                    <div className="w-12 h-12 rounded-full bg-[#8B9D8B]/10 flex items-center justify-center text-[#8B9D8B]">
+                      <DoodlePeople />
                     </div>
                     <div>
                       <h4 className="font-bold text-lg text-[#333]">Team & Talent</h4>
@@ -1313,8 +1315,8 @@ export default function Page() {
                 {/* Marketing & User Acquisition */}
                 <div className="bg-white rounded-xl p-6 border border-[#8B9D8B]/20 shadow-sm">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-[#FF9B7A]/10 flex items-center justify-center">
-                      <span className="text-2xl">📱</span>
+                    <div className="w-12 h-12 rounded-full bg-[#FF9B7A]/10 flex items-center justify-center text-[#FF9B7A]">
+                      <DoodleChart />
                     </div>
                     <div>
                       <h4 className="font-bold text-lg text-[#333]">Marketing & User Acquisition</h4>
@@ -1332,8 +1334,8 @@ export default function Page() {
                 {/* Product Development */}
                 <div className="bg-white rounded-xl p-6 border border-[#8B9D8B]/20 shadow-sm">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-[#8B9D8B]/10 flex items-center justify-center">
-                      <span className="text-2xl">💻</span>
+                    <div className="w-12 h-12 rounded-full bg-[#8B9D8B]/10 flex items-center justify-center text-[#8B9D8B]">
+                      <DoodleRocket />
                     </div>
                     <div>
                       <h4 className="font-bold text-lg text-[#333]">Product Development</h4>
@@ -1350,8 +1352,8 @@ export default function Page() {
                 {/* Operations */}
                 <div className="bg-white rounded-xl p-6 border border-[#8B9D8B]/20 shadow-sm">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-[#FF9B7A]/10 flex items-center justify-center">
-                      <span className="text-2xl">⚙️</span>
+                    <div className="w-12 h-12 rounded-full bg-[#FF9B7A]/10 flex items-center justify-center text-[#FF9B7A]">
+                      <DoodleGear />
                     </div>
                     <div>
                       <h4 className="font-bold text-lg text-[#333]">Operations</h4>
