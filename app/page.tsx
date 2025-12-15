@@ -222,7 +222,7 @@ export default function Page() {
                 <br />
                 Parenting Support
               </h1>
-              <p className="text-xl sm:text-2xl text-white/90 max-w-2xl">Powered by AI</p>
+              <p className="text-xl sm:text-2xl text-white/90 max-w-2xl">Confident Parenting, Backed by Science - Powered by AI</p>
               <div className="bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-2xl max-w-2xl">
                 <p className="text-white text-sm sm:text-base">
                   Connecting parents to 500,000+ peer-reviewed studies through compassionate AI guidance
