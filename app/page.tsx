@@ -1550,7 +1550,7 @@ export default function Page() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <div className="flex items-center gap-2 text-white">
                   <MailIcon className="w-5 h-5" />
-                  <span>id@reflectaa.app</span>
+                  <span>id@reflectaa.com</span>
                 </div>
                 <div className="flex items-center gap-2 text-white">
                   <PhoneIcon className="w-5 h-5" />
