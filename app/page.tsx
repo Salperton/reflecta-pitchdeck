@@ -860,29 +860,90 @@ export default function Page() {
           {/* Slide 6: Business Model */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
             <div className="bg-white rounded-[32px] p-10 sm:p-14 border border-[#8B9D8B]/20 min-h-[450px]">
-              <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-3xl font-bold mb-6">
+              <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-3xl font-bold mb-8 text-center">
                 B2C Subscription Tiers
               </h2>
-              <div className="space-y-4">
-                <div className="border-l-4 border-[#999] pl-4">
-                  <div className="font-bold text-lg">Free Tier</div>
-                  <p className="text-sm text-[#666]">5 questions/day • Basic chat</p>
-                  <p className="text-xs text-[#999] mt-1">Acquisition funnel</p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                {/* Tier 1: Free */}
+                <div className="border-2 border-neutral-200 rounded-2xl p-6 bg-white hover:shadow-lg transition-shadow">
+                  <div className="text-center mb-4">
+                    <div className="text-sm font-semibold text-neutral-500 uppercase tracking-wide mb-2">Basic</div>
+                    <div className="text-4xl font-bold text-neutral-900 mb-1">$0</div>
+                    <div className="text-sm text-neutral-500">Free Forever</div>
+                  </div>
+                  <ul className="space-y-3 text-sm">
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#8B9D8B] mt-0.5">✓</span>
+                      <span>5 Questions/Day</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#8B9D8B] mt-0.5">✓</span>
+                      <span>Basic Milestone Tracking</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#8B9D8B] mt-0.5">✓</span>
+                      <span>Acquisition Funnel</span>
+                    </li>
+                  </ul>
                 </div>
-                <div className="border-l-4 border-[#8B9D8B] pl-4">
-                  <div className="font-bold text-lg">Premium - $15/mo</div>
-                  <p className="text-sm text-[#666]">Unlimited chat • All assessments</p>
-                  <p className="text-xs text-[#8B9D8B] mt-1">70% of users • $540 LTV</p>
+
+                {/* Tier 2: Premium (Recommended) */}
+                <div className="border-2 border-[#8B9D8B] rounded-2xl p-6 bg-gradient-to-br from-[#F5F5DC] to-white relative shadow-lg scale-105">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#8B9D8B] text-white text-xs font-bold px-4 py-1 rounded-full">
+                    RECOMMENDED
+                  </div>
+                  <div className="text-center mb-4">
+                    <div className="text-sm font-semibold text-[#8B9D8B] uppercase tracking-wide mb-2">
+                      Peace of Mind
+                    </div>
+                    <div className="text-4xl font-bold text-neutral-900 mb-1">$9.99</div>
+                    <div className="text-sm text-neutral-500">per month</div>
+                  </div>
+                  <ul className="space-y-3 text-sm">
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#8B9D8B] mt-0.5">✓</span>
+                      <span className="font-semibold">Unlimited Verified AI Chat</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#8B9D8B] mt-0.5">✓</span>
+                      <span>"Nanny Mode" (Translation to Tagalog/Hindi)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#8B9D8B] mt-0.5">✓</span>
+                      <span>Advanced Assessments</span>
+                    </li>
+                  </ul>
+                  <p className="text-xs text-[#8B9D8B] mt-4 text-center font-semibold">
+                    70% of users • The Volume Driver
+                  </p>
                 </div>
-                <div className="border-l-4 border-[#6B8E6B] pl-4">
-                  <div className="font-bold text-lg">Family - $25/mo</div>
-                  <p className="text-sm text-[#666]">Multiple children • Clinician consults</p>
-                  <p className="text-xs text-[#6B8E6B] mt-1">25% of users • $900 LTV</p>
-                </div>
-                <div className="border-l-4 border-[#FF6B6B] pl-4">
-                  <div className="font-bold text-lg">Professional - $50/mo</div>
-                  <p className="text-sm text-[#666]">Client management • Analytics</p>
-                  <p className="text-xs text-[#FF6B6B] mt-1">5% of users • $1,800 LTV</p>
+
+                {/* Tier 3: Family */}
+                <div className="border-2 border-neutral-200 rounded-2xl p-6 bg-white hover:shadow-lg transition-shadow">
+                  <div className="text-center mb-4">
+                    <div className="text-sm font-semibold text-neutral-500 uppercase tracking-wide mb-2">
+                      The Village
+                    </div>
+                    <div className="text-4xl font-bold text-neutral-900 mb-1">$24.99</div>
+                    <div className="text-sm text-neutral-500">per month</div>
+                  </div>
+                  <ul className="space-y-3 text-sm">
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#8B9D8B] mt-0.5">✓</span>
+                      <span>Multiple Child Profiles (Unlimited)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#8B9D8B] mt-0.5">✓</span>
+                      <span>Deep Developmental Reports (PDF Export)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#8B9D8B] mt-0.5">✓</span>
+                      <span>Priority Support</span>
+                    </li>
+                  </ul>
+                  <p className="text-xs text-[#6B8E6B] mt-4 text-center font-semibold">
+                    25% of users • The Value Driver
+                  </p>
                 </div>
               </div>
             </div>
