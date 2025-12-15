@@ -2,7 +2,6 @@ import { NextResponse } from "next/server"
 import type { NextRequest } from "next/server"
 
 export function proxy(request: NextRequest) {
-  /* Authentication disabled for development
   // Check if user is accessing the main page
   if (request.nextUrl.pathname === "/") {
     const authToken = request.cookies.get("auth-token")
@@ -21,7 +20,6 @@ export function proxy(request: NextRequest) {
       return NextResponse.redirect(new URL("/", request.url))
     }
   }
-  */
 
   return NextResponse.next()
 }

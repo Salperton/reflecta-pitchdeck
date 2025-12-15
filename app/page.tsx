@@ -4,7 +4,7 @@ import { Plus_Jakarta_Sans, Space_Grotesk } from "next/font/google"
 import html2canvas from "html2canvas"
 import { useRef, useState, useEffect } from "react"
 import Image from "next/image"
-// import { useRouter } from 'next/navigation'
+import { useRouter } from "next/navigation"
 import {
   DoodleWarning,
   DoodleStress,
@@ -41,7 +41,7 @@ const spaceGrotesk = Space_Grotesk({
 export default function Page() {
   const contentRef = useRef<HTMLDivElement>(null)
   const [showScrollTop, setShowScrollTop] = useState(false)
-  // const router = useRouter()
+  const router = useRouter()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -151,7 +151,6 @@ export default function Page() {
     console.log("[v0] Image downloaded successfully")
   }
 
-  /*
   const handleLogout = async () => {
     try {
       await fetch("/api/auth/logout", { method: "POST" })
@@ -161,7 +160,6 @@ export default function Page() {
       console.error("[v0] Logout error:", error)
     }
   }
-  */
 
   return (
     <div className={`${plusJakarta.variable} ${spaceGrotesk.variable} font-[family-name:var(--font-plus-jakarta)]`}>
@@ -172,14 +170,12 @@ export default function Page() {
         >
           Download Deck
         </button>
-        {/*
         <button
           onClick={handleLogout}
           className="px-4 py-2 bg-white text-black rounded-full text-sm font-semibold hover:bg-[#FF6B6B] hover:text-white transition-all"
         >
           Logout
         </button>
-        */}
       </div>
 
       {showScrollTop && (

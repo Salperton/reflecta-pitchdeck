@@ -107,10 +107,10 @@ export default function LoginPage() {
           <div className="mt-6 p-4 bg-[#F5F5DC]/50 rounded-xl">
             <p className="text-xs text-[#5A6A5A] text-center">Demo Credentials</p>
             <p className="text-sm text-[#2C3E2C] text-center font-mono mt-1">
-              Username: <strong>reflecta</strong>
+              Username: <strong>conclave</strong>
             </p>
             <p className="text-sm text-[#2C3E2C] text-center font-mono">
-              Password: <strong>demo2024</strong>
+              Password: <strong>inest881</strong>
             </p>
           </div>
         </div>

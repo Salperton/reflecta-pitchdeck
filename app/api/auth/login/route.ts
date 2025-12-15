@@ -1,9 +1,8 @@
 import { type NextRequest, NextResponse } from "next/server"
 import { cookies } from "next/headers"
 
-// Simple hardcoded credentials
-const VALID_USERNAME = "reflecta"
-const VALID_PASSWORD = "demo2024"
+const VALID_USERNAME = "conclave"
+const VALID_PASSWORD = "inest881"
 
 export async function POST(request: NextRequest) {
   try {
