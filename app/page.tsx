@@ -1340,7 +1340,7 @@ export default function Page() {
           {/* Slide 12: Milestones */}
           <div className="bg-white rounded-[32px] p-6 sm:p-8 border border-[#8B9D8B]/20 min-h-[450px]">
             <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-6">
-              Key Milestones (18 Months)
+              Post-Launch Key Milestones (18 Months)
             </h2>
             <div className="space-y-6">
               <div className="border-l-4 border-[#8B9D8B] pl-6">
