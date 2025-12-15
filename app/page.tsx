@@ -479,8 +479,9 @@ export default function Page() {
                   <p className="text-sm sm:text-base text-[#666] leading-relaxed">
                     We use a RAG engine to cross-reference every answer against{" "}
                     <span className="font-bold text-[#8B9D8B]">500,000+ peer-reviewed studies</span>, with{" "}
-                    <span className="font-bold text-[#8B9D8B]">1000+ hand-curated papers</span> scored by our proprietary
-                    quality algorithm. No guesswork. No generic advice. Just evidence-based guidance you can trust.
+                    <span className="font-bold text-[#8B9D8B]">1000+ hand-curated papers</span> scored by our
+                    proprietary quality algorithm. No guesswork. No generic advice. Just evidence-based guidance you can
+                    trust.
                   </p>
                 </div>
               </div>
@@ -543,7 +544,7 @@ export default function Page() {
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-[#8B9D8B] rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-sm sm:text-base">
-                    The global mental health apps market size was estimated at <strong>USD 7.48 billion in 2024</strong>{" "}
+                    The global mental health apps market size was estimated at <strong>USD 6.52 billion in 2024</strong>{" "}
                     and is expected to expand at a <strong>CAGR of 14.6%</strong> from 2025 to 2030
                     <a
                       href="https://www.grandviewresearch.com/industry-analysis/mental-health-apps-market-report"
@@ -933,9 +934,9 @@ export default function Page() {
                 <div className="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20">
                   <div className="flex justify-between items-start mb-2">
                     <div className="font-bold text-lg">Month 12 Target</div>
-                    <div className="text-sm font-semibold">$16,500 MRR (60k AED)</div>
+                    <div className="text-sm font-semibold">$15,000 MRR ($180K ARR)</div>
                   </div>
-                  <p className="text-sm text-white/80">Active Subs: ~1,500</p>
+                  <p className="text-sm text-white/80">Active Subs: ~1,000</p>
                 </div>
               </div>
 
@@ -945,13 +946,13 @@ export default function Page() {
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   <div>
                     <div className="text-white/70 text-xs mb-1">CAC</div>
-                    <div className="font-bold text-lg">&lt; $15</div>
-                    <div className="text-white/60 text-xs">(55 AED)</div>
+                    <div className="font-bold text-lg">&lt; $45</div>
+                    <div className="text-white/60 text-xs">(165 AED)</div>
                   </div>
                   <div>
                     <div className="text-white/70 text-xs mb-1">LTV</div>
-                    <div className="font-bold text-lg">&gt; $180</div>
-                    <div className="text-white/60 text-xs">(660 AED)</div>
+                    <div className="font-bold text-lg">&gt; $540</div>
+                    <div className="text-white/60 text-xs">(1,980 AED)</div>
                   </div>
                 </div>
               </div>
