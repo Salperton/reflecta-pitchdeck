@@ -1223,7 +1223,7 @@ export default function Page() {
                   </div>
                   <div>
                     <h3 className="font-[family-name:var(--font-space-grotesk)] text-lg font-bold mb-1">
-                      Ivan [Last Name]
+                      Ivan Doncic
                     </h3>
                     <p className="text-sm font-semibold text-[#8B9D8B]">CTO & Founder</p>
                   </div>
@@ -1267,7 +1267,8 @@ export default function Page() {
                     <h3 className="font-[family-name:var(--font-space-grotesk)] text-lg font-bold mb-1">
                       Marko Cvijic
                     </h3>
-                    <p className="text-sm font-semibold text-[#8B9D8B]">Co-CTO & Head of Digital Acquisition</p>
+                    <p className="text-sm font-semibold text-[#8B9D8B]">Co-CTO &amp; 
+Head of Digital Acquisition</p>
                   </div>
                 </div>
                 <ul className="space-y-2 text-xs text-[#666] mb-3">
@@ -1303,7 +1304,8 @@ export default function Page() {
                     <h3 className="font-[family-name:var(--font-space-grotesk)] text-lg font-bold mb-1">
                       John Lochrie
                     </h3>
-                    <p className="text-sm font-semibold text-[#8B9D8B]">CFO & Head of Growth</p>
+                    <p className="text-sm fontCFO &amp; 
+Head of GrowthD8B]">CFO & Head of Growth</p>
                   </div>
                 </div>
                 <ul className="space-y-2 text-xs text-[#666] mb-3">
