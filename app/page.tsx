@@ -899,7 +899,7 @@ export default function Page() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               <div className="bg-white rounded-[32px] p-10 sm:p-14 border border-[#8B9D8B]/20 min-h-[450px]">
-                <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-3xl font-bold mb-6">
+                <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl font-bold mb-6 sm:text-2xl">
                   B2C Subscription Tiers
                 </h2>
                 <div className="space-y-4">
@@ -931,7 +931,7 @@ export default function Page() {
                 <div className="absolute top-4 left-4 text-xs font-semibold text-[#8B9D8B]/60 bg-[#8B9D8B]/5 px-3 py-1 rounded-full">
                   Slide 6
                 </div>
-                <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-6">
+                <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl font-bold mb-6 sm:text-2xl">
                   Year 1: Financial Roadmap
                 </h2>
 
