@@ -1125,7 +1125,7 @@ export default function Page() {
                     2
                   </div>
                   <div>
-                    <h3 className="font-bold text-base">Intent & Visual Dominance</h3>
+                    <h3 className="font-bold text-base">Intent &amp; Visual</h3>
                     <p className="text-xs text-[#999]">Months 4-9</p>
                   </div>
                 </div>
@@ -1302,11 +1302,11 @@ export default function Page() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <div className="flex items-center gap-2 text-white">
                   <MailIcon className="w-5 h-5" />
-                  <span>contact@reflecta.app</span>
+                  <span>info@reflectaa.app</span>
                 </div>
                 <div className="flex items-center gap-2 text-white">
                   <PhoneIcon className="w-5 h-5" />
-                  <span>+971 50 123 4567</span>
+                  <span>+971 56 179 8887</span>
                 </div>
               </div>
             </div>
