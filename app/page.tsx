@@ -680,7 +680,7 @@ export default function Page() {
             </div>
           </div>
 
-          {/* Slide 4: Why Now? */}
+          {/* Slide 5: Why Now? */}
           <div className="bg-white/90 backdrop-blur rounded-[32px] p-8 sm:p-12 min-h-[500px] border border-[#8B9D8B]/20 overflow-hidden">
             <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-4xl font-bold mb-4 text-[#8B9D8B]">
               Why Now?
@@ -805,9 +805,9 @@ export default function Page() {
                     </h3>
                     <p className="text-base leading-relaxed text-center text-neutral-700">
                       GCC is a sophisticated market that behaves very differently from the US/Europe. The MENA region
-                      (specifically UAE & KSA) has the{" "}
-                      <strong>highest smartphone penetration in the world (99%+)</strong> and a culture that deeply
-                      values privacy and family reputation.
+                      (specifically UAE & KSA) has{" "}
+                      <strong>78-84% Smartphone Penetration, but 91% Internet Penetration</strong> and a culture that
+                      deeply values privacy and family reputation.
                     </p>
 
                     {/* Key Context Points */}
@@ -857,7 +857,7 @@ export default function Page() {
             </div>
           </div>
 
-          {/* Slide 5: Business Model */}
+          {/* Slide 6: Business Model */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
             <div className="bg-white rounded-[32px] p-6 sm:p-8 border border-[#8B9D8B]/20 min-h-[450px]">
               <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-3xl font-bold mb-6">
@@ -940,7 +940,7 @@ export default function Page() {
             </div>
           </div>
 
-          {/* Slide 6: Competitive Advantage */}
+          {/* Slide 7: Competitive Advantage */}
           <div className="bg-white rounded-[32px] p-6 sm:p-8 border border-[#8B9D8B]/20 min-h-[500px]">
             <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-6">
               Competitive Advantage
@@ -950,72 +950,72 @@ export default function Page() {
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b-2 border-[#8B9D8B]">
-                    <th className="text-left py-3 font-bold">Feature</th>
-                    <th className="text-center py-3 font-bold text-[#8B9D8B]">Reflecta</th>
-                    <th className="text-center py-3 font-bold text-[#666]">Mental Health Apps</th>
-                    <th className="text-center py-3 font-bold text-[#666]">AI Chatbots</th>
-                    <th className="text-center py-3 font-bold text-[#666]">Therapy Platforms</th>
+                    <th className="text-left py-4 font-bold">Feature</th>
+                    <th className="text-center py-4 font-bold text-[#8B9D8B]">Reflecta</th>
+                    <th className="text-center py-4 font-bold text-[#666]">Mental Health Apps</th>
+                    <th className="text-center py-4 font-bold text-[#666]">AI Chatbots</th>
+                    <th className="text-center py-4 font-bold text-[#666]">Therapy Platforms</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="border-b border-[#eee]">
-                    <td className="py-3">Real-time research</td>
-                    <td className="text-center flex justify-center">
+                    <td className="py-5">Real-time research</td>
+                    <td className="text-center flex justify-center py-5">
                       <span className="text-[#8B9D8B] inline-block">
                         <DoodleCheckmark />
                       </span>
                     </td>
-                    <td className="text-center text-[#999]">-</td>
-                    <td className="text-center text-[#999]">-</td>
-                    <td className="text-center">
+                    <td className="text-center text-[#999] py-5">-</td>
+                    <td className="text-center text-[#999] py-5">-</td>
+                    <td className="text-center py-5">
                       <span className="text-[#8B9D8B] inline-block">
                         <DoodleCheckmark />
                       </span>
                     </td>
                   </tr>
                   <tr className="border-b border-[#eee]">
-                    <td className="py-3">24/7 availability</td>
-                    <td className="text-center">
+                    <td className="py-5">24/7 availability</td>
+                    <td className="text-center py-5">
                       <span className="text-[#8B9D8B] inline-flex justify-center">
                         <DoodleCheckmark />
                       </span>
                     </td>
-                    <td className="text-center">
+                    <td className="text-center py-5">
                       <span className="text-[#8B9D8B] inline-flex justify-center">
                         <DoodleCheckmark />
                       </span>
                     </td>
-                    <td className="text-center">
+                    <td className="text-center py-5">
                       <span className="text-[#8B9D8B] inline-flex justify-center">
                         <DoodleCheckmark />
                       </span>
                     </td>
-                    <td className="text-center text-[#999]">Limited</td>
+                    <td className="text-center text-[#999] py-5">Limited</td>
                   </tr>
                   <tr className="border-b border-[#eee]">
-                    <td className="py-3">Transparent citations</td>
-                    <td className="text-center">
+                    <td className="py-5">Transparent citations</td>
+                    <td className="text-center py-5">
                       <span className="text-[#8B9D8B] inline-flex justify-center">
                         <DoodleCheckmark />
                       </span>
                     </td>
-                    <td className="text-center text-[#999]">-</td>
-                    <td className="text-center text-[#999]">-</td>
-                    <td className="text-center">Varies</td>
+                    <td className="text-center text-[#999] py-5">-</td>
+                    <td className="text-center text-[#999] py-5">-</td>
+                    <td className="text-center py-5">Varies</td>
                   </tr>
                   <tr className="border-b border-[#eee]">
-                    <td className="py-3">Parenting-specific</td>
-                    <td className="text-center">✅ Specialized</td>
-                    <td className="text-center text-[#999]">❌ General</td>
-                    <td className="text-center text-[#999]">❌ General</td>
-                    <td className="text-center text-[#999]">❌ General</td>
+                    <td className="py-5">Parenting-specific</td>
+                    <td className="text-center py-5">✅ Specialized</td>
+                    <td className="text-center text-[#999] py-5">❌ General</td>
+                    <td className="text-center text-[#999] py-5">❌ General</td>
+                    <td className="text-center text-[#999] py-5">❌ General</td>
                   </tr>
                   <tr>
-                    <td className="py-3">Cost</td>
-                    <td className="text-center font-bold text-[#8B9D8B]">$15-25/mo</td>
-                    <td className="text-center">$12-15/mo</td>
-                    <td className="text-center">$0-20/mo</td>
-                    <td className="text-center">$260-436/mo</td>
+                    <td className="py-5">Cost</td>
+                    <td className="text-center font-bold text-[#8B9D8B] py-5">$15-25/mo</td>
+                    <td className="text-center py-5">$12-15/mo</td>
+                    <td className="text-center py-5">$0-20/mo</td>
+                    <td className="text-center py-5">$260-436/mo</td>
                   </tr>
                 </tbody>
               </table>
@@ -1030,7 +1030,7 @@ export default function Page() {
             </div>
           </div>
 
-          {/* Slide 7: Traction */}
+          {/* Slide 8: Traction */}
           <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] text-white rounded-[32px] p-6 sm:p-8 border border-[#404040] min-h-[450px] flex flex-col justify-center items-center text-center overflow-hidden relative">
             <div className="absolute top-0 right-0 w-64 h-64 bg-[#8B9D8B]/10 rounded-full blur-3xl"></div>
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#8B9D8B]/10 rounded-full blur-3xl"></div>
@@ -1078,8 +1078,8 @@ export default function Page() {
             </div>
           </div>
 
-          {/* Slide 8: Investment Ask */}
-          <div className="bg-gradient-to-br from-[#8B9D8B] to-[#6B8E6B] rounded-[32px] p-6 sm:p-10 border border-[#7A8C7A] min-h-[500px] flex flex-col justify-between">
+          {/* Slide 9: Investment Ask */}
+          <div className="bg-gradient-to-br from-[#8B9D8B] to-[#6B8E6B] rounded-[32px] p-8 sm:p-12 min-h-[500px] flex flex-col justify-between">
             <div>
               <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-4xl font-bold mb-6">
                 The Opportunity
@@ -1125,7 +1125,7 @@ export default function Page() {
             </div>
           </div>
 
-          {/* Slide 9: Team */}
+          {/* Slide 10: Team */}
           <div className="bg-gradient-to-br from-white to-[#F5F5DC] rounded-[32px] p-6 sm:p-8 border border-[#8B9D8B]/20 min-h-[500px]">
             <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-3 text-center">
               Our Team
@@ -1213,177 +1213,183 @@ export default function Page() {
             </div>
           </div>
 
-          {/* Slide 10: GTM Strategy */}
+          {/* Slide 11: GTM Strategy */}
           <div className="bg-gradient-to-br from-white to-[#F5F5DC] rounded-[32px] p-6 sm:p-8 border border-[#8B9D8B]/20 min-h-[500px]">
-            <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-3 text-center">
-              Go-To-Market Strategy
-            </h2>
+            <h2 className="text-xl sm:text-2xl font-bold text-center text-[#2C3E2C] mb-2">Go-To-Market Strategy</h2>
             <p className="text-center text-[#666] mb-6 text-sm sm:text-base">
-              Three-phase approach to sustainable growth
+              From "Zero" to "Scale": A 12-Month Execution Roadmap
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-              {/* Phase 1 */}
               <div className="bg-white rounded-2xl p-5 border border-[#8B9D8B]/20">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-[#8B9D8B] to-[#6B7D6B] rounded-full flex items-center justify-center text-white font-bold">
                     1
                   </div>
                   <div>
-                    <h3 className="font-bold text-base">Community-Led</h3>
-                    <p className="text-xs text-[#999]">Months 1-6</p>
+                    <h3 className="font-bold text-base">Trust Seeding</h3>
+                    <p className="text-xs text-[#999]">Months 1-3</p>
                   </div>
                 </div>
+                <p className="text-xs font-semibold text-[#8B9D8B] mb-2">The "Dark Social" Phase</p>
+                <p className="text-xs text-[#666] mb-3 italic">Focus: Infiltration & Feedback</p>
                 <ul className="space-y-2 text-xs text-[#666]">
                   <li className="flex items-start gap-2">
                     <span className="text-[#8B9D8B] mt-0.5">•</span>
-                    <span>Mental health practitioners outreach </span>
+                    <span>Seed 50 "Ambassador Moms" in private WhatsApp School Groups</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#8B9D8B] mt-0.5">•</span>
-                    <span> Instagram/TikTok parenting tips</span>
+                    <span>Manual recruitment in Compound Community Groups (The Springs, Arabian Ranches)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#8B9D8B] mt-0.5">•</span>
-                    <span>UAE parenting Facebook groups & forums</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#8B9D8B] mt-0.5">•</span>
-                    <span>Influencer partnerships (parenting micro-influencers)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#8B9D8B] mt-0.5">•</span>
-                    <span className="font-semibold">Free tier = low friction entry point</span>
+                    <span className="font-semibold">Goal: 100 Beta Testers & Founder-led trust building</span>
                   </li>
                 </ul>
               </div>
 
-              {/* Phase 2 */}
               <div className="bg-white rounded-2xl p-5 border border-[#8B9D8B]/20">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-[#FF9B7A] to-[#E87B5A] rounded-full flex items-center justify-center text-white font-bold">
                     2
                   </div>
                   <div>
-                    <h3 className="font-bold text-base">Strategic Partnerships</h3>
-                    <p className="text-xs text-[#999]">Months 6-12</p>
+                    <h3 className="font-bold text-base">Intent & Visual Dominance</h3>
+                    <p className="text-xs text-[#999]">Months 4-9</p>
                   </div>
                 </div>
+                <p className="text-xs font-semibold text-[#FF9B7A] mb-2">Capturing Crisis & Building Brand</p>
+                <p className="text-xs text-[#666] mb-3 italic">Focus: CAC Validation</p>
                 <ul className="space-y-2 text-xs text-[#666]">
                   <li className="flex items-start gap-2">
-                    <span className="text-[#FF9B7A] mt-0.5">•</span>
-                    <span>Pediatric clinics (QR codes in waiting rooms, co-branding)</span>
+                    <span className="text-[#FF9B7A] mt-0.5">🔍</span>
+                    <span>
+                      <strong>Google Search Ads:</strong> Sniping high-anxiety queries (e.g., "Toddler fever 39C what to
+                      do")
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#FF9B7A] mt-0.5">📸</span>
+                    <span>
+                      <strong>Instagram Reels Ads:</strong> High-visual "Stop the Scroll" video ads targeting UAE
+                      parents. Focus on "Medical Safety" messaging
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#FF9B7A] mt-0.5">•</span>
-                    <span>Corporate wellness programs (employee benefit positioning)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#FF9B7A] mt-0.5">•</span>
-                    <span>Schools/nurseries partnerships</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#FF9B7A] mt-0.5">•</span>
-                    <span>Parenting expos & events</span>
+                    <span className="font-semibold">
+                      Goal: Validate CAC {"<"} $15 by combining Search Intent with Instagram visual trust
+                    </span>
                   </li>
                 </ul>
               </div>
 
-              {/* Phase 3 */}
               <div className="bg-white rounded-2xl p-5 border border-[#8B9D8B]/20">
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-[#6B7D8B] to-[#4B5D6B] rounded-full flex items-center justify-center text-white font-bold">
+                  <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-[#6B7D6B] to-[#4B5D6B] rounded-full flex items-center justify-center text-white font-bold">
                     3
                   </div>
                   <div>
-                    <h3 className="font-bold text-base">Paid Acquisition</h3>
-                    <p className="text-xs text-[#999]">Month 12+</p>
+                    <h3 className="font-bold text-base">The Trust Scale</h3>
+                    <p className="text-xs text-[#999]">Months 10-12</p>
                   </div>
                 </div>
+                <p className="text-xs font-semibold text-[#6B7D8B] mb-2">Viral Loop</p>
+                <p className="text-xs text-[#666] mb-3 italic">Focus: Expansion & Localization</p>
                 <ul className="space-y-2 text-xs text-[#666]">
                   <li className="flex items-start gap-2">
-                    <span className="text-[#6B7D8B] mt-0.5">•</span>
-                    <span>Meta/Google ads targeting parents 25-45</span>
+                    <span className="text-[#6B7D6B] mt-0.5">📱</span>
+                    <span>
+                      <strong>Snapchat & TikTok:</strong> Paid partnerships with "Micro-Influencers" (KSA Focus)
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#6B7D8B] mt-0.5">•</span>
-                    <span>Retargeting campaigns</span>
+                    <span className="text-[#6B7D6B] mt-0.5">🔄</span>
+                    <span>
+                      <strong>Retargeting Loops:</strong> Showing "Success Story" ads on Instagram to users who visited
+                      from Google but didn't sign up
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#6B7D8B] mt-0.5">•</span>
-                    <span className="font-semibold">Target CAC: $45</span>
+                    <span className="text-[#6B7D6B] mt-0.5">•</span>
+                    <span className="font-semibold">Goal: Reach 1,500+ subscribers and $16.5k MRR</span>
                   </li>
                 </ul>
               </div>
             </div>
 
-            {/* Key Metrics */}
             <div className="bg-gradient-to-r from-[#8B9D8B]/10 to-[#FF9B7A]/10 rounded-2xl p-4 border border-[#8B9D8B]/20">
               <div className="grid grid-cols-3 gap-4 text-center">
                 <div>
-                  <p className="text-2xl font-bold text-[#8B9D8B]">$45</p>
+                  <p className="text-2xl font-bold text-[#8B9D8B]">{"<"}$15</p>
                   <p className="text-xs text-[#666]">Target CAC</p>
                 </div>
                 <div>
-                  <p className="text-2xl font-bold text-[#FF9B7A]">3x</p>
+                  <p className="text-2xl font-bold text-[#FF9B7A]">12x</p>
                   <p className="text-xs text-[#666]">LTV:CAC Ratio</p>
                 </div>
                 <div>
-                  <p className="text-2xl font-bold text-[#6B7D8B]">12mo</p>
+                  <p className="text-2xl font-bold text-[#6B7D6B]">12mo</p>
                   <p className="text-xs text-[#666]">To Profitability</p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Slide 11: Milestones */}
+          {/* Slide 12: Milestones */}
           <div className="bg-white rounded-[32px] p-6 sm:p-8 border border-[#8B9D8B]/20 min-h-[450px]">
             <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold mb-6">
               Key Milestones (18 Months)
             </h2>
             <div className="space-y-6">
               <div className="border-l-4 border-[#8B9D8B] pl-6">
-                <div className="flex items-center gap-3 mb-2">
+                <div className="flex items-center gap-3 mb-3">
                   <span className="bg-[#8B9D8B] text-white text-sm font-bold px-3 py-1 rounded-full">Month 6</span>
-                  <span className="font-[family-name:var(--font-space-grotesk)] text-2xl font-bold">$9K MRR</span>
+                  <span className="font-[family-name:var(--font-space-grotesk)] text-xl font-bold">
+                    High-Fidelity Launch
+                  </span>
                 </div>
-                <ul className="space-y-1 text-sm text-[#666]">
-                  <li>• 2,500 total users (500 paying)</li>
-                  <li>• 15 enrolled clinicians (UAE)</li>
-                  <li>• 3 corporate pilot partnerships</li>
+                <ul className="space-y-1.5 text-sm text-[#666]">
+                  <li>• Top 50 Health App (UAE)</li>
+                  <li>• 500+ Active Users with 40% Retention</li>
+                  <li>• 1st B2B Corporate Pilot Signed</li>
                 </ul>
               </div>
 
               <div className="border-l-4 border-[#6B8E6B] pl-6">
-                <div className="flex items-center gap-3 mb-2">
+                <div className="flex items-center gap-3 mb-3">
                   <span className="bg-[#6B8E6B] text-white text-sm font-bold px-3 py-1 rounded-full">Month 12</span>
-                  <span className="font-[family-name:var(--font-space-grotesk)] text-2xl font-bold">$45K MRR</span>
+                  <span className="font-[family-name:var(--font-space-grotesk)] text-xl font-bold">
+                    $25K MRR ($300k ARR)
+                  </span>
                 </div>
-                <ul className="space-y-1 text-sm text-[#666]">
-                  <li>• 12,000 total users (2,500 paying)</li>
-                  <li>• 40 clinicians across UAE + Saudi</li>
-                  <li>• 2 white-label pilot agreements</li>
+                <ul className="space-y-1.5 text-sm text-[#666]">
+                  <li>• 2,500+ Paid Subscribers (CAC stabilized &lt; $20)</li>
+                  <li>• KSA Launch Live (Khaleeji Dialect + Saudi Payment Gateway)</li>
+                  <li>• 3 Major Influencer Ambassadors (Exclusive 1-Year Contracts)</li>
                 </ul>
               </div>
 
               <div className="border-l-4 border-[#FF6B6B] pl-6">
-                <div className="flex items-center gap-3 mb-2">
+                <div className="flex items-center gap-3 mb-3">
                   <span className="bg-[#FF6B6B] text-white text-sm font-bold px-3 py-1 rounded-full">Month 18</span>
-                  <span className="font-[family-name:var(--font-space-grotesk)] text-2xl font-bold">$135K MRR</span>
+                  <span className="font-[family-name:var(--font-space-grotesk)] text-xl font-bold">
+                    $100K MRR ($1.2M ARR)
+                  </span>
                 </div>
-                <ul className="space-y-1 text-sm text-[#666]">
-                  <li>• 30,000 total users (7,500 paying) → $1.6M ARR</li>
-                  <li>• 80+ clinicians across GCC</li>
-                  <li>• 10 B2B partnerships • Mobile apps launched</li>
+                <ul className="space-y-1.5 text-sm text-[#666]">
+                  <li>• 10,000+ Paid Subscribers</li>
+                  <li>• 3 B2B Enterprise Contracts Live (Employee Wellness Benefit)</li>
                   <li>
-                    • <strong>Series A Ready</strong> - LTV:CAC 10:1+
+                    • <strong>Series A Ready</strong> (Meeting the $1M ARR MENA Benchmark)
                   </li>
                 </ul>
               </div>
             </div>
           </div>
 
-          {/* Slide 12: Vision */}
+          {/* Slide 13: Vision */}
           <div className="bg-gradient-to-br from-[#8B9D8B] to-[#6B8E6B] rounded-[32px] p-8 sm:p-12 min-h-[450px] flex flex-col justify-center">
             <div className="flex items-center gap-3 mb-6">
               <BrainIcon className="w-12 h-12 text-[#F5F5DC]" />
