@@ -1,15 +1,21 @@
 import { type NextRequest, NextResponse } from "next/server"
 import { cookies } from "next/headers"
 
-const VALID_USERNAME = "conclave"
-const VALID_PASSWORD = "win"
+const VALID_CREDENTIALS = [
+  { username: "conclave", password: "win" },
+  { username: "sue", password: "niw2026" },
+]
 
 export async function POST(request: NextRequest) {
   try {
     const { username, password } = await request.json()
 
     // Validate credentials
-    if (username === VALID_USERNAME && password === VALID_PASSWORD) {
+    const isValid = VALID_CREDENTIALS.some(
+      (cred) => cred.username === username && cred.password === password
+    )
+
+    if (isValid) {
       // Set auth cookie
       const cookieStore = await cookies()
       cookieStore.set("auth-token", "authenticated", {
